@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+    eclair</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">완료</div>
+
+    <div class="category-text" value="cs15">잡티: 피부 상태는 어떤가요?</div>
+
+    <div id="q100">
+        <div class="next">1/3</div>
+        <div class="question">자외선 차단제를 얼마나 꾸준히 바르나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q100_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a442">항상 모든 날에 잘 바르고 다녀요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q100_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a443">보통 잘 바르지만, 겨울이나 흐린 날은 바르지 않아요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q100_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a444">여름에만 잘 발라요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q100_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a445">거의 바르지 않아요</button>
+            <br>
+        </div>
+    </div>
+    <div id="q101">
+        <div class="next">2/3</div>
+        <div class="question">하루에 자외선 차단제를 얼마나 자주 바르나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q101_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a446">아침에 한 번 발라요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q101_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a447">여름에만 중간에 한 번 이상 발라요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q101_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a448">항상 중간에 한 번 이상 더 발라요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q101_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a449">안 발라요</button>
+            <br>
+        </div>
+    </div>
+    
+    <div id="q102">
+        <div class="next">3/3</div>
+        <div class="question">주로 많이 생기는 기미의 유형이 어떤가요?</div>
+        <table class="answer">
+            <tr>
+              <td>
+                <input class="button_brand_normal" type="image" data-checked="check" name="q2_btns" src="/images/Asset 1.svg" value ="p1"  >
+                <div class="desc-text2">없어요</div>
+              </td>
+              <td>
+                <input class="button_brand_normal" type="image" data-checked="check" name="q2_btns" src ="/images/Asset 10.svg"value ="p2" >
+                <div class="desc-text2">희미하게 퍼진 나비 유형</div>
+              </td>
+              <td>
+                <input class="button_brand_normal" type="image" data-checked="check"name="q2_btns" src ="/images/Asset 3.svg"value ="p3" >
+                <div class="desc-text2">광대뼈를 따라 라인이 형성된 유형</div>
+              </td>
+            </tr>
+           
+            </tr>
+            <tr>
+            <td>
+              <input class="button_brand_normal" type="image" data-checked="check"name="q2_btns" src= "/images/Asset 4.svg"value ="p4" >
+              <div class="desc-text2">눈꼬리 밑 근처에 작게 퍼져 있는 유형</div>
+            </td>
+            <td>
+              <input class="button_brand_normal" type="image" data-checked="check"name="q2_btns" src = "/images/Asset 5.svg"value ="p5">
+              <div class="desc-text2">좌우대칭이지만 크기, 위치가 다른 유형</div>
+            </td>
+            <td>
+              <input class="button_brand_normal" type="image" data-checked="check"name="q2_btns" src ="/images/Asset 6.svg" value ="p6">
+              <div class="desc-text2">염증, 상처 후 색소침착</div>
+            </td>
+          </tr>
+          <tr>
+          <td>
+            <input class="button_brand_normal" type="image" data-checked="check"name="q2_btns" src= "/images/Asset 7.svg" value ="p7">
+            <div class="desc-text2">이마나 입 주위에도 생기는 유형</div>
+          </td>
+          <td>
+            <input class="button_brand_normal" type="image" data-checked="check"name="q2_btns" src = "/images/Asset 8.svg"value ="p8">
+            <div class="desc-text2">일광흑자(노인성 색소반)</div>
+          </td>
+          <td>
+            <input class="button_brand_normal" type="image" data-checked="check"name="q2_btns" src = "/images/Asset 9.svg"value ="p9">
+            <div class="desc-text2">닥터자르트</div>
+          </td>
+        </tr>
+        
+          </table>
+      </div>
+ 
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

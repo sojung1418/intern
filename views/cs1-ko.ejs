@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+  
+</head>
+
+<body>
+
+  <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; margin-top:17px; padding-left:16px ">
+  <div class= "finish" >완료</div>
+  <br>
+  <br>
+  <div class="category-text" value = "cs1">여태까지 사용했던 화장품을<br>5개 이상 선택해주세요</div>
+  <div id="q1">
+   
+
+    <table class="answer">
+      <tr>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns" src="/images/아벤느.png" value= "p1" >
+        </td>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns" src ="/images/프라이머리로우.png" value= "p2">
+        </td>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns"src ="/images/코스알엑스.png"value= "p3" >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="desc-text2">아벤느 시칼파트 리페어 SOS 크림</div>
+        </td>
+       
+        <td>
+          <div class="desc-text2">프라이머리로우 두유 아쥴렌 젤 크림</div>
+        </td>
+        <td>
+          <div class="desc-text2">코스알엑스 원스텝 오리지널 클리어...</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns" src= "/images/러쉬.png" value= "p4">
+        </td>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns" src ="/images/숨.jpg"value= "p5">
+        </td>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns"src = "/images/프라이머리로우밀크.jpg"value= "p6">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="desc-text2">러쉬 코스메틱 워리어</div>
+        </td>
+       
+        <td>
+          <div class="desc-text2">숨37 화이트 어워드 버블 디톡스 마스크</div>
+        </td>
+        <td>
+          <div class="desc-text2">프라이머리로우 소이 밀크 크림</div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns" src= "/images/아벤느.png" value= "p7">
+        </td>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns" src = "/images/프라이머리로우.png" value= "p8">
+        </td>
+        <td>
+          <input class="button_cosmetic_normal" type="image" name="q1_btns"src = "/images/코스알엑스.png"value= "p9">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="desc-text2">아벤느 시칼파트 리페어 SOS 크림</div>
+        </td>
+       
+        <td>
+          <div class="desc-text2">프라이머리로우 두유 아쥴렌 젤 크림</div>
+        </td>
+        <td>
+          <div class="desc-text2">코스알엑스 원스텝 오리지널 클리어...</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+ 
+  <script>
+
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+  
+  </script>
+  </body>
+  </html>

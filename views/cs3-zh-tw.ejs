@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+  
+</head>
+
+<body>
+
+  <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+  <div class= "finish" >完成</div>
+  <br>
+  <br>
+  <div class="category-text" value = "cs3">介紹自己</div>
+  <div id="q3">
+    <div class="next">1/5</div>
+    <div class="question">請選擇居住地。
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q3_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="">지역</button>
+      <br>
+
+    </div>
+  </div> 
+  <div id="q4">
+    <div class="next">2/5</div>
+    <div class="question">您的髮型？
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a1">超短</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a2">短髮</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a3">到肩膀</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a4">長髮</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q5">
+    <div class="next">3/5</div>
+    <div class="question">你的職業是？
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a5">學生</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a6">上班族</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a7">自由業</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a8">其他</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q6">
+    <div class="next">4/5</div>
+    <div class="question">是否結婚？
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q6_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a9">未婚</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q6_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a10">已婚</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q7">
+    <div class="next">5/5</div>
+    <div class="question">是否有子女?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q7_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a11">有</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q7_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a12">無</button>
+      <br>
+    </div>
+  </div> 
+ 
+  <script>
+
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+  
+  </script>
+  </body>
+  </html>

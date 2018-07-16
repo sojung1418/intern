@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    test</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+</head>
+
+<body>
+
+  <img src="/images/button_close_normal.png"  style="float:left; margin-top:17px; padding-left:16px ">
+<br><br>
+<div class="category-text">TEST(소정)</div>
+<div id = "index">
+
+<div>
+<div class="question">이름을 적어주세요.</div>
+<input type="text" id="q12_text" data-answerType="at_str_s"  value ="입력" />
+</div>
+
+<script>
+
+var name1 = {
+ userid: "",
+ nickname: "",
+};
+
+
+  $("#q12_text").focusout(function () {
+
+   var named = "";
+
+name1.userid = $(this).val();
+   name1.nickname = "nick"
+    setSurvey(name1);
+   
+    function setSurvey(name) {
+
+
+      $.ajax({
+  
+        url: "/index/setSurvey",
+        dataType: 'json',
+        type: 'POST',
+        data: name,
+        success: function (result) {
+          console.log(result);
+  
+        },
+        error: function (request, status, error) {
+          alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
+        }
+  
+  
+      });
+    }
+     
+    
+  });
+
+</script>
+
+    <div class="question">다음은 설문 항목 입니다.</div><br>
+  <table class="answer">
+  <tr>
+    <td><button class="index" value= "cs1">1</button></td>
+    <td><button class="index" value= "cs2">2</button></td>
+    <td><button class="index" value= "cs3">3</button></td>
+    <td><button class="index" value= "cs4" >4</button></td>
+
+  </tr>
+  <tr>
+  <td><button class="index" value= "cs5">5</button></td>
+  <td><button class="index" value= "cs6">6</button></td>
+  <td><button class="index" value= "cs7">7</button></td>
+  <td><button class="index" value= "cs8">8</button></td>
+
+  </tr>
+  <tr>
+  <td><button class="index" value= "cs9" >9</button></td>
+  <td><button class="index" value= "cs10" >10</button></td>
+  <td><button class="index"  value= "cs11">11</button></td>
+  <td><button class="index" value= "cs12">12</button></td>
+  </tr>
+  <tr>
+  <td><button class="index" value= "cs13" >13</button></td>
+  <td><button class="index" value= "cs14">14</button></td>
+  <td><button class="index" value= "cs15" >15</button></td>
+  <td><button class="index" value= "cs16" >16</button></td>
+
+  </tr>
+  <tr>
+  <td><button class="index" value= "cs17" >17</button></td>
+  <td><button class="index" value= "cs18" >18</button></td>
+   
+
+  </tr>
+  
+  </table>
+  </div>
+  <script>
+  
+  $(".index").on("click", function changeView(){
+    var url = "https://bvbvvv.herokuapp.com/survey/"+$(this).val()+"?userid="+name1.userid+"&nickname=nick&cid=c1&csid="+$(this).val()+"&locale=-ko"; 
+    $(location).attr('href',url);
+    
+  
+  });
+  </script>
+  
+ <br>
+
+
+
+
+
+
+</script>
+</body>
+
+</html>

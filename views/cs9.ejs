@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        test</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">Completed</div>
+
+    <div class="category-text" value = "cs9">What’s &&’s skin type?(Pigmentation/Non-pigmentation)</div>
+    <div id="q58">
+        <div class="next">1/9</div>
+        <div class="question">After you get injury, how long scars remain on the skin? (Brown scar, not pink one)</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a240">None, never seen before </button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a241">A week</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a242">A few weeks</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a243">A few months</button>
+        </div>
+        <br>
+    </div>
+    <div id="q59">
+        <div class="next">2/9</div>
+        <div class="question">Do you even had dots or brown spots on the cheeks or upper lip? Or did you ever remove it before?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a244">No</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a245">Don’t know well</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a246">A few</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a247">Many</button>
+        </div>
+        <br>
+    </div>
+    <div id="q60">
+        <div class="next">3/9</div>
+        <div class="question"> Does your dot get deeper due to the sun light?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a248">Don’t have dots</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a249">Don’t know</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a250">Little bit deeper</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a251">Severely deeper</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a252">Apply sunscreen every day and do not exposed to the sunlight. (If you apply sunscreen due to the reasons above, please select 4)</button>
+        </div>
+        <br>
+    </div>
+
+    <div id="q61">
+        <div class="next">4/9</div>
+        <div class="question">Did you have been diagnosed with freckle?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a253">No</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a254">I did, but not currently</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a255">I do, and currently yes</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a256">Too much</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a257">Don’t know well</button>
+        </div>
+        <br>
+    </div>
+    <div id="q62">
+        <div class="next">5/9</div>
+        <div class="question">Did you have small brown dots on the face, chest, back or arms?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a258">No</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a259">A few</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a260">Many</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a261">A lot</button>
+        </div>
+        <br>
+    </div>
+    <div id="q63">
+        <div class="next">6/9</div>
+        <div class="question">How your skin reacts where there is too much exposure to the sunlight?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a262">Get only sun burned</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a263">Get sun burned and dark</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a264">Become gradually dark</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a265">Don’t know well or original skin is quite dark</button>
+        </div>
+        <br>
+    </div>
+    <div id="q64">
+        <div class="next">7/9</div>
+        <div class="question"> How your skin reacts where there is a series of exposure to the sunlight for many days?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a266">Sun burn and blister, no change in skin tone</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a267">Become darker little bit</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a268">Become darker much</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a269">Original skin tone is quite dark</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a270">Don’t know well (If you don’t have exposure to the sun currently, please think about the experience of your childhood)</button>
+        </div>
+        <br>
+    </div>
+    <div id="q65">
+        <div class="next">8/9</div>
+        <div class="question">Do you have any freckle when you go outside?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a271">No</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a272">Barely</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a273">A few</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a274">Many</button>
+        </div>
+        <br>
+    </div>
+    <div id="q66">
+        <div class="next">9/9</div>
+        <div class="question">Do you get dark spots when the area is exposed to the sun?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q66_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a275">Yes</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q66_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a276">No</button>
+            <br>
+           
+        </div>
+        <br>
+    </div>
+
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

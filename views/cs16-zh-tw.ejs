@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+    eclair</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">完成</div>
+
+    <div class="category-text" value="cs14">水腫: 皮膚問題的嚴重程度?</div>
+
+    <div id="q103">
+        <div class="next">1/4</div>
+        <div class="question">臉經常水腫嗎?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a460">每週1~2次</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a461">每週3~4次</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a462">每週5~6次</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a463">幾乎不腫</button>
+            <br>
+        </div>
+    </div>
+    <div id = "q104">
+        <div class = "next">2/4</div>
+            <div class="question">臉種程度是？</div><br>
+          <table class="answer">
+          <tr>
+            <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="1"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="2"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="3"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="4"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="5"></td>
+          </tr>
+          <tr>
+            <td><div class="desc-text">幾乎不腫</div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text">腫得厲害</div></td>
+          </tr>
+          </table>
+          </div>
+    <div id="q105">
+        <div class="next">3/4</div>
+        <div class="question">腫臉的主要原因是？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a466">壓力</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a467">睡眠不足</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a468">鈉的過量攝取</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a469">作息時間打破</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a470">常吃宵夜</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a471">沒有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a472">其他</button>
+            <br>
+        </div>
+    </div>
+    <div id="q106">
+        <div class="next">4/4</div>
+        <div class="question">臉腫時怎樣管理?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a473">冷敷</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a474">熱敷</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a475">臉部按摩/指壓</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a476">用輪廓面霜</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a477">不在意</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a478">其他</button>
+            <br>
+        </div>
+    </div>
+
+ 
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

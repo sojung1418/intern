@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+</head>
+
+<body>
+
+
+  <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px; ">
+  <div class="finish">완료</div>
+  <br>
+  <br>
+  <div class="category-text" value = "cs5">당신의 스킨 케어를 알려주세요.</div>
+
+  <div id="q12">
+    <div class="next">1/3</div>
+    <div class="question">소장 중인 스킨 케어 제품 개수를 적어주세요.</div>
+    <input type="text" id="q12_text" data-answerType="at_str_s"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>"  value ="입력" />
+  </div>
+
+
+
+  <div id="q13">
+    <div class="next">2/3</div>
+    <div class="question">실제로 사용 중인 스킨 케어 제품을 모두 골라주세요.</div>
+    <form class="answer">
+      <button class="button_test_normal" data-checked="check" name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a32">화장수(스킨/토너)</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a33">로션</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q13_btns"data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a34">세럼</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a35">에센스</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a36">오일</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a37">올인원</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a38">선케어</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a39">크림</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a40">클렌징</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a41">팩</button>
+      <br>
+      <button class="button_test_normal" data-checked="check"name="q13_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a42">스크럽</button>
+      <br>
+    </form>
+</div>
+    <div id="q14">
+      <div class="next">3/3</div>
+      <div class="question">스킨 케어 제품을 구매할 때 1회 최대 구매 예산은 얼마인가요?</div>
+      <div class="answer">
+        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a43">3만원 미만</button>
+        <br>
+        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a44">3만 원~5만 원</button>
+        <br>
+        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a45">5만 원~10만 원</button>
+        <br>
+        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a46">10만 원~15만 원</button>
+        <br>
+      </div>
+    </div>
+    
+
+    <script>
+    
+  
+      var answers =  <%-JSON.stringify(list)-%> ;
+    
+    </script>
+</body>
+</html>

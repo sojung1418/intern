@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        test</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">완료</div>
+
+    <div class="category-text" value="cs9">&&님의 피부 타입은? (탄력/주름)</div>
+    <div id="q80">
+        <div class="next">1/11</div>
+        <div class="question">웃거나 찡그리지 않은 평소 모습에서 주름이 잘 보이나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a335">아니오 웃거나 찡그리거나 눈썹을 들어올려도 생기지 않습니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a336">표정을 지을 때만 생겨요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a337">표정을 지을 때도 생기고 표정을 짓지 않아도 주름이 좀 있어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a338">어떤 표정을 짓고 있지 않아도 주름이 있어요</button>
+        </div>
+        <br>
+    </div>
+
+    <div id="q81">
+        <div class="next">2/11</div>
+        <div class="question">어머니를 비롯 외가쪽 친척들의 얼굴 피부는 얼마나 나이 들어 보이나요/보였나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a339">나이보다 5년에서 10년 어려 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a340">그대로의 나이로 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a341">5년 정도 더 나이 들어 보입니다</button>
+            
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a342">5년 이상 더 나이 들어 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a343">적용할 수 있는 문제가 아닙니다(입양 또는 기억 안 남)</button>
+        </div>
+        <br>
+    </div>
+    <div id="q82">
+        <div class="next">3/11</div>
+        <div class="question">아버지를 비롯 친가쪽 친척들의 얼굴 피부는 얼마나 나이 들어 보이나요/보였나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a344">나이보다 5년에서 10년 어려 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a345">그대로의 나이로 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a346">5년 정도 더 나이 들어 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a347">5년 이상 더 나이 들어 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a348">적용할 수 있는 문제가 아닙니다(입양 또는 기억 안 남)</button>
+        </div>
+        <br>
+    </div>
+    <div id="q83">
+        <div class="next">4/11</div>
+        <div class="question">1년에 2주 이상 지속적으로 자신의 피부를 태운 경험이 있었나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a349">없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a350">1~5년 정도</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a351">5~10년 정도</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a352">10년 이상</button>
+        </div>
+        <br>
+    </div>
+    <div id="q84">
+        <div class="next">5/11</div>
+        <div class="question">일상생활 중에서 하루의 일광 노출은 얼마나 되나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a353">거의 없어요(대부분 실내에 머물고 햇빛을 많이 보는 지역이 아니다)</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a354">약간(햇빛이 강하지는 않으나 일반적으로 해를 보고 산다)</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a355">중간 정도(꽤 햇빛에 노출되어 지낸다)</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a356">많아요(적도 근처, 햇빛이 쨍쨍한 지역에 산다)</button>
+        </div>
+        <br>
+    </div>
+    <div id="q85">
+        <div class="next">6/11</div>
+        <div class="question">자신은 얼마나 나이 들어 보인다고 생각하시나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a357">나이보다 1년에서 5년 어려 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a358">그대로의 나이로 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a359">5년 정도 더 나이 들어 보입니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a360">5년 이상 더 나이 들어 보입니다</button>
+        </div>
+        <br>
+    </div>
+    <div id="q86">
+        <div class="next">7/11</div>
+        <div class="question">살면서 담배를 얼마나 많이 피웠나요(혹은 담배에 얼마나 많이 노출되었나요)?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a361">없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a362">과거에 담배를 피웠지만 지금은 금연 중이에요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a363">과거에 담배를 10년 이상 피웠거나 현재 가끔씩 담배를 피워요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a364">매일 흡연합니다</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a365">흡연은 하지 않지만 같이 살거나 일하는 사람들이 흡연을 합니다</button>
+        </div>
+        <br>
+    </div>
+    <div id="q87">
+        <div class="next">8/11</div>
+        <div class="question">거주지의 공기 오염은 어떤가요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a366">맑고 깨끗해요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a367">맑고 깨끗한 편이지만 그렇지 않을 때도 있어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a368">약간 오염되어 있어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a369">공기 오염이 심해요</button>
+        </div>
+        <br>
+    </div>
+    <div id="q88">
+        <div class="next">9/11</div>
+        <div class="question">식사에서 과일과 채소가 차지하는 비율이 어느 정도인가요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a370">75~100%</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a371">25~75%</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a372">10~25%</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a373">0~10%</button>
+        </div>
+        <br>
+    </div>
+    <div id="q89">
+        <div class="next">10/11</div>
+        <div class="question">태닝을 하지 않았을 때의 피부 색은?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a374">어두워요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a375">중간</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a376">밝아요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a377">매우 밝아요</button>
+        </div>
+        <br>
+    </div>
+    <div id="q90">
+        <div class="next">11/11</div>
+        <div class="question">65세 이상이신가요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q90_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a378">네</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q90_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a379">아니오</button>
+            
+        </div>
+        <br>
+    </div>
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

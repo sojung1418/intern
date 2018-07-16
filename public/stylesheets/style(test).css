@@ -1,0 +1,263 @@
+@font-face {
+  font-family: 'NotoSansCJKkr-Bold';
+  src: url('/fonts/NotoSansCJKkr-Bold.otf')
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr-Regular';
+  src: url('/fonts/NotoSansCJKkr-Regular.otf')
+}
+
+@font-face {
+  font-family: 'NotoSansCJKkr-Midium';
+  src: url('/fonts/NotoSansCJKkr-Midium.otf')
+}
+
+body {
+  width: 320px;
+  background-color: white;
+  
+}
+
+a {
+  color: #00B7FF;
+}
+/*완료버튼 */
+.finish{
+  float: left;
+margin-left: 246px;
+font: 13px;
+  line-height: 19px;
+  color:#f2f2f2;
+  padding-bottom: 31px;
+  font-family: 'NotoSansCJKkr-Regular';
+  margin-top:18px;
+}
+/*완료버튼 활성화 후*/
+.finish_focused{
+  
+  color: #B75273;
+}
+/*csid에 해당하는 텍스트*/
+.category-text {
+  font: 16px;
+ font-weight: bold;
+  padding-left: 16px;
+  margin-bottom: 24px;
+  line-height: 24px;
+  font-family: 'NotoSansCJKkr-Bold';
+
+}
+/*cs1 상품 이미지버튼 */
+.button_cosmetic_normal{
+ 
+
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #f2f2f2;
+  
+  margin-right: 12px;
+  width: 88px;
+  height: 88px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 8px;
+}
+/*cs2 화장품 브랜드 이미지버튼 */
+.button_brand_normal{
+  margin-right: 12px;
+
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #f2f2f2;
+margin-top: 31px;
+  width: 88px;
+  height: 88px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+/*cs1,cs2 이미지버튼 클릭 후*/
+.button_brand_cosmetic_normal_checked{
+  opacity:0.35;
+  background-color: #f86f9c;
+ 
+}
+/*원형 숫자버튼 */
+.button_normal {
+ 
+  position: relative;
+   font-family: 'NotoSansCJKkr-Regular';
+   background-color: #ffffff;
+   border: 2px solid  #f2f2f2;
+   color: black;
+   width: 56px;
+   height: 56px;
+   text-align: center;
+   font-size: 12px;
+   opacity: 1;
+   transition: 0.3s;
+   border-radius: 50%;
+ }
+
+ 
+ /*원형 숫자버튼 총3개(cs13,14) */
+ .button_normal2{
+  position: relative;
+  font-family: 'NotoSansCJKkr-Regular';
+  background-color: #ffffff;
+  border: 2px solid #f2f2f2;
+  color: black;
+  width: 56px;
+  height: 56px;
+  text-align: center;
+  font-size: 12px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 50%;
+  margin-right:30px;
+ }
+ /*원형 숫자버튼 1 */
+ .button_normal[value="1"] {
+   top: 110px;
+   
+ }
+ /*원형 숫자버튼 2*/
+ .button_normal[value="2"] {
+   top: 46px;
+   margin-left: -20px;
+ }
+ /*원형 숫자버튼 3 */
+ .button_normal[value="3"] {
+ top:24px;
+   margin-left: 11px;
+ }
+ /*원형 숫자버튼 4 */
+ .button_normal[value="4"] {
+   top: 46px;
+   margin-left: 11px;
+ }
+ /*원형 숫자버튼 5 */
+ .button_normal[value="5"] {
+   top: 110px;
+   margin-left: -20px;
+ }
+
+/*원형 숫자버튼 클릭 후 */
+ .button_normal_checked {
+   background-color: #f86f9c;
+   color: white;
+   border: none;
+ }
+
+
+ /*단일선택,중복선택 기본버튼 */
+.button_test_normal {
+  padding-left: 16px;
+  text-align: left;
+  font-size: 13px;
+  width: 288px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #fefefe;
+  border: 1px solid black;
+  border-color: #f2f2f2;
+  margin-bottom: 16px;
+  opacity: 1;
+  transition: 0.3s;
+}
+ /*단일선택,중복선택 기본버튼 클릭 후 */
+.button_test_normal_checked {
+  background-color:#f86f9c;
+  color:white;
+}
+ /*텍스트 창*/
+#q12_text{
+width: 288px;
+height: 25px;
+margin-left: 16px;
+margin-top: 16px;
+margin-bottom: 16px;
+border: 0px;
+border-bottom: 1px solid #bebebe;
+
+size: 13px;
+line-height: 19px;
+color: #bebebe;
+}
+
+ /*qid해당 텍스트 */
+.question {
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 16px;
+  font-family: 'NotoSansCJKkr-Regular';
+}
+
+.next {
+  padding-left: 16px;
+  font-size: 13px;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+
+
+.subanswer{
+  font-family: 'NotoSansCJKkr-Regular';
+  font-size: 13px;
+  padding-left: 16px;
+  padding-top: 16px;
+ 
+}
+ /*answer해당 텍스트 */
+.answer {
+  font-family: 'NotoSansCJKkr-Regular';
+  font-size: 13px;
+  padding-left: 16px;
+  padding-top: 24px;
+  letter-spacing: -0.3px;
+}
+
+ /*원형 숫자버튼 subtext */
+.desc-text {
+  text-align: center;
+  position: relative;
+margin-top:110px;
+margin-left: -10px;
+  font: 10px;
+  line-height: 19px;
+  font-family: 'NotoSansCJKkr-Regular';
+
+}
+
+ /*qid해당 텍스트 */
+.desc-text2 {
+  text-align: center;
+  position: relative;
+  font: 10px;
+  line-height: 15px;
+
+margin-top:3px;
+  font-family: 'NotoSansCJKkr-Midium';
+}
+
+.desc-text3 {
+  
+margin-top:3px;
+
+}
+
+.index{
+  text-decoration: none;
+  color:white;
+ width: 56px;
+ height:56px;
+text-align: center;
+margin:5px;
+
+font-size: 15px;
+  transition:all 0.1s;
+  background-color: #f86f9c;
+  color: #f2f2f2;
+  border-radius: 50%;
+}

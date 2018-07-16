@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+
+    <img src="/images/button_close_normal.png"  style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">Completed</div>
+    <br><br>
+  <div class="category-text" value = "cs12">Acne: What’s your skin troubles?</div>
+  <div id="q91">
+    <div class="next">1/4</div>
+    <div class="question">What kinds of acne do you have?</div>
+    <div class="answer">
+        
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a380">
+        Whitehead</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a381">
+        Blackhead</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a382">
+        Pustular acne</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a383">
+        Nodular acne</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a384">
+        No acne</button>
+    </div>
+  </div>
+
+  <div id="q92">
+    <div class="next">2/4</div>
+    <div class="question">Which part of your face has acne?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a385">
+       Forehead</button>
+      <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a386">
+        Cheek</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a387">
+          Under the eyes</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a388">
+          Nose</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a389">
+         Tip of the nose</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a390">
+        Middle of the forehead</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a391">
+         Chin</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a392">
+         Lips</button>
+          <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a393">
+          Eyes</button>
+            <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a394">
+             Ears</button>
+                <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a395">
+                    No acne</button>
+    </div>
+  </div>
+  <div id="q93">
+    <div class="next">3/4</div>
+    <div class="question">How many times do you get acne?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a396">Once a week</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a397">Once a month</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a398">Sometimes</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a399">Barely</button>
+    </div>
+  </div>
+
+
+  <div id="q94">
+    <div class="next">4/4</div>
+    <div class="question">How do you treat acne?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a400">Use spot patch</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a401">Use spot products for acne</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a402">Press out</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a403">Scratch or peel off</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a404">Do not touch</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a405">Etc.</button>
+    </div>
+  </div>
+
+  <script>
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+
+  </script>
+ 
+  
+</body>
+</html>

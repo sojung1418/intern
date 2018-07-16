@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    test</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+  
+</head>
+
+<body>
+
+  <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+  <div class= "finish" >완료</div>
+
+  <div class="category-text" value = "cs9">&&님의 피부 타입은? (건성/지성)</div>
+  <div id="q48">
+    <div class="next">1/10</div>
+    <div class="question">세안 후 화장품을 바르지 않고(보습제, 자외선 차단제, 색조화장품 등) 2~3시간 후에 밝은 조명 아래에서 거울을 보았을 때, 당신의 이마와 양 볼의 느낌과 외양은 어떤가요?</div>
+    <div class="answer">
+        <button class="button_test_normal" data-checked="check" name="q48_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a196">매우 거칠고 버석거리고 각질이 들떠 보여요</button>
+        <br>
+        <button class="button_test_normal" data-checked="check" name="q48_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a197">피부가 땅겨요    </button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q48_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a198">피부가 땅기지 않고 건조해 보이지 않고 번들거리지 않아요    </button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q48_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a199">밝은 빛에 반사되는 듯이 번들거려요    </button>
+    </div>
+    <br>
+  </div> 
+  <div id="q49">
+    <div class="next">2/10</div>
+    <div class="question">파우더를 사용하지 않는 기초화장(파운데이션, 베이스)을 끝낸 2~3시간 후에 당신의 화장 상태는?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q49_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a200">약간 들떠 보이고 주름진 부분이 나타나요   </button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q49_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a201">부드러워 보여요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q49_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a202">번들거려요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q49_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a203">화장이 고정되지 않고 번들거려요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q49_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a204">파운데이션을 바르지 않아요</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q50">
+    <div class="next">3/10</div>
+    <div class="question">습도가 낮은 환경(예, 늦가을, 겨울철)에서 보습제나 자외선차단제를 사용하지 않으면, 당신의 얼굴 피부는?</div>
+    <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q50_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a205">피부가 건조하고 갈라질 것 같아요</button>
+            <br>
+      <button class="button_test_normal" data-checked="check" name="q50_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a206">피부가 땅겨요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q50_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a207">정상적이다</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q50_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a208">피부가 번들거려요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q50_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a209">잘 모르겠어요</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q51">
+    <div class="next">4/10</div>
+    <div class="question">핀 끝 크기(혹은 그 이상)의 큰 모공이 얼마나 있나요?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q51_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a210">없어요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q51_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a211">티존에 약간 있어요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q51_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a212">많이 보여요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q51_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a213">정말 많이 보여요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q51_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a214">잘 모르겠어요</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q52">
+    <div class="next">5/10</div>
+    <div class="question">얼굴 피부는 다음 중에서 어떠한 상태인가요?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q52_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a215">건조</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q52_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a216">정상적</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q52_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a217">복합(부위별로 차이가 있다)</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q52_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="218">유분감</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q53">
+    <div class="next">6/10</div>
+    <div class="question">비눗방울, 거품이 심하게 발생하는 비누를 사용하면 당신의 얼굴 피부는?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q53_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a219">건조하고 갈라질 것 같아요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q53_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a220">약간 건조하지만 갈라지지 않아요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q53_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a221">정상적이에요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q53_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a222">번들거려요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q53_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a223">거품나는 클렌저를 사용하지 않아요(만약 건조함이 이유라면 1번을 선택하세요)</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q54">
+    <div class="next">7/10</div>
+    <div class="question">보습제를 사용하지 않으면 얼굴 피부가 당기는 느낌입니까?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q54_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a224">항상</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q54_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a225">때때로</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q54_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a226">거의 그렇지 않아요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q54_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a227">전혀 그렇지 않아요</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q55">
+    <div class="next">8/10</div>
+    <div class="question">얼굴에 모공은 어느 정도 있나요?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q55_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a228">전혀 없어요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q55_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a229">거의 없어요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q55_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a230">약간 있어요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q55_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a231">많아요</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q56">
+    <div class="next">9/10</div>
+    <div class="question">얼굴의 T-존 구역(이마와 코)의 기름기는?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q56_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a232">전혀 그렇지 않아요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q56_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a233">약간 그래요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q56_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a234">많아요</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q56_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a235">아주많아요</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q57">
+    <div class="next">10/10</div>
+    <div class="question">보습제를 바르고 2~3시간 이후에 양 볼의 상태는?</div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q57_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a236">거칠고 버석거리고 각질이 들떠 보인다</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q57_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a237">부드러워 보인다</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q57_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a238">번들거린다</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q57_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a239">번들거리고 보습제가 필요 없어요</button>
+      <br>
+    </div>
+  </div> 
+  
+  <script>
+
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+  
+  </script>
+  </body>
+  </html>

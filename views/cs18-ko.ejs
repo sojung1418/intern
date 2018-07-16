@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+    eclair</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">완료</div>
+
+    <div class="category-text" value="cs18">각질/피부결: 피부 상태는 어떤가요? </div>
+
+    <div id="q110">
+        <div class="next">1/5</div>
+        <div class="question">각질이 주로 어디에 많이 생기나요?</div>
+        <div class="answer">
+          <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a490">
+            입 주변 </button>
+          <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a491">
+             볼</button>
+          <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a492">
+           코 옆</button>
+            <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a493">
+             이마  </button>
+            <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a494">
+              턱</button>
+            <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a495">
+             없어요</button>
+             <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a496">
+               기타</button>
+        </div>
+      </div>
+    <div id="q111">
+        <div class="next">2/5</div>
+        <div class="question">각질 제거를 얼마나 자주 하시나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a497">일주일에 1-2번</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a498">이주에 1번</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a499">한 달에 1번 이상</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a500">안 해요</button>
+            <br>
+        </div>
+    </div>
+    <div id = "q112">
+        <div class = "next">3/5</div>
+            <div class="question">화장이 잘 들뜨나요?</div><br>
+          <table class="answer">
+          <tr>
+            <td><input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q112_btns" value="1"></td>
+            <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q112_btns" value="2"></td>
+            <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q112_btns" value="3"></td>
+          
+          </tr>
+          <tr>
+            <td><div class="desc-text3">아니에요</div></td>
+            <td><div class="desc-text3">보통이에요</div></td>
+            <td><div class="desc-text3"  style ="margin-left: 15px;">맞아요</div></td>
+          </tr>
+          </table>
+          </div>
+          <br><br><br>
+          <div id = "q113">
+            <div class = "next">4/5</div>
+                <div class="question">각질이 없는데도 피부가 거친가요?</div><br>
+              <table class="answer">
+              <tr>
+                <td><input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q113_btns" value="1"></td>
+               
+                <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q113_btns" value="2"></td>
+                
+                <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q113_btns" value="3"></td>
+              
+              </tr>
+              <tr>
+                <td><div class="desc-text3">아니에요</div></td>
+              
+                <td><div class="desc-text3">보통이에요</div></td>
+              
+                <td><div class="desc-text3"  style ="margin-left: 15px;">맞아요</div></td>
+              </tr>
+              </table>
+              </div>
+              <br><br><br>
+              <div id = "q114">
+                <div class = "next">5/5</div>
+                    <div class="question">피부가 푸석푸석한가요?</div><br>
+                  <table class="answer">
+                  <tr>
+                    <td><input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q114_btns" value="1"></td>
+                    <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q114_btns" value="2"></td>
+                    <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q114_btns" value="3"></td>
+                  </tr>
+                  <tr>
+                    <td><div class="desc-text3">아니에요</div></td>
+                    <td><div class="desc-text3">보통이에요</div></td>
+                    <td><div class="desc-text3" style ="margin-left: 15px;">맞아요</div></td>
+                  </tr>
+                  </table>
+                  </div>
+   
+ 
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

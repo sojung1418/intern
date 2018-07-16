@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+    eclair</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">완료</div>
+
+    <div class="category-text" value="cs14">붓기: 피부 상태는 어떤가요?</div>
+
+    <div id="q103">
+        <div class="next">1/4</div>
+        <div class="question">얼마나 자주 얼굴이 붓나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a460">주 1~2회</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a461">주 3~4회</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a462">주 5~6회</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a463">거의 붓지 않아요</button>
+            <br>
+        </div>
+    </div>
+    <div id = "q104">
+        <div class = "next">2/4</div>
+            <div class="question">얼굴이 붓는 정도는 어떤가요?</div><br>
+          <table class="answer">
+          <tr>
+            <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="1"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="2"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="3"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="4"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="5"></td>
+          </tr>
+          <tr>
+            <td><div class="desc-text">거의 붓지<br>않아요</div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text">많이<br>부어요</div></td>
+          </tr>
+          </table>
+          </div>
+    <div id="q105">
+        <div class="next">3/4</div>
+        <div class="question">주로 얼굴이 붓는 요인은 무엇인가요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a466">스트레스</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a467">수면부족</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a468">과도한 나트륨 섭취</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a469">바이오리듬 타격</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a470">잦은 야식</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a471">없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a472">기타</button>
+            <br>
+        </div>
+    </div>
+    <div id="q106">
+        <div class="next">4/4</div>
+        <div class="question">주로 얼굴이 부었을 때 어떻게 케어하나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a473">냉찜질</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a474">온찜질</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a475">얼굴 마사지/지압</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a476">윤곽 크림 사용</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a477">신경 쓰지 않음</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a478">기타</button>
+            <br>
+        </div>
+    </div>
+
+ 
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

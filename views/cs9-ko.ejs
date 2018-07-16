@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        test</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">완료</div>
+
+    <div class="category-text" value = "cs9">&&님의 피부 타입은? (색소/비색소)</div>
+    <div id="q58">
+        <div class="next">1/9</div>
+        <div class="question">외상 후에 갈색(분홍색은 아님)의 상처 자국이 피부에 얼마나 오래 존재하나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a240">없거나 본적 없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a241">한 주</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a242">몇 주</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a243">여러 달</button>
+        </div>
+        <br>
+    </div>
+    <div id="q59">
+        <div class="next">2/9</div>
+        <div class="question">윗입술이나 두 뺨에 짙은 점이나 갈색 반점이 있나요? 혹은 과거에 병변을 제거한 경험이 있나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a244">없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a245">잘 모르겠어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a246">약간 보여요 </button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a247">여러 부분 보여요 </button>
+        </div>
+        <br>
+    </div>
+    <div id="q60">
+        <div class="next">3/9</div>
+        <div class="question"> 얼굴의 짙은 점은 햇볕에 의해 악화되나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a248">짙은 점이 없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a249">모르겠어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a250">약간 악화돼요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a251">아주 악화돼요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a252">선크림을 매일 바르고 햇빛을 보지 않는다(만약 위 증상을 피하기 위해 매일 선크림을 바른다면 4번을 선택하세요)</button>
+        </div>
+        <br>
+    </div>
+
+    <div id="q61">
+        <div class="next">4/9</div>
+        <div class="question">얼굴에 기미(옅거나 짙은 갈색 혹은 회색 반점)로 진단받은 적이 있나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a253">없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a254">그런 적이 있지만, 현재는 아니에요 </button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a255">지금도 그래요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a256">심각하게 많아요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a257">잘 모르겠어요</button>
+        </div>
+        <br>
+    </div>
+    <div id="q62">
+        <div class="next">5/9</div>
+        <div class="question">얼굴, 가슴, 등, 양팔에 작은 갈색 점(주근깨, 일광 흑자)이 있거나, 있었나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a258">없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a259">약간 있어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a260">많아요 </button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a261">아주 많아요</button>
+        </div>
+        <br>
+    </div>
+    <div id="q63">
+        <div class="next">6/9</div>
+        <div class="question">평소보다 태양에 많이 노출되었을 때 피부는 어떻게 반응하나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a262">선번만 돼요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a263">선번되고 어두워져요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a264">점점 어두워져요 </button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a265">원래 피부가 어두워요 혹은 어두워진 지 잘 모르겠어요</button>
+        </div>
+        <br>
+    </div>
+    <div id="q64">
+        <div class="next">7/9</div>
+        <div class="question">여러 날 동안 연속해서 태양에 노출되면 어떤 일이 일어났나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a266">선번과 물집, 피부색 변화는 없어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a267">피부가 조금 어두워져요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a268">피부가 아주 어두워져요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a269">원래 피부가 어두워서 잘 모르겠어요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a270">잘 모르겠어요(만약 햇빛에 거의 노출되지 않는다면 과거 유년 시절의 경험을 고려해주세요)</button>
+        </div>
+        <br>
+    </div>
+    <div id="q65">
+        <div class="next">8/9</div>
+        <div class="question">햇볕에 나가면, 주근깨(작은 1~2mm 크기의 편평한 점)가 생기나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a271">생기지 않아요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a272">거의 생기지 않아요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a273">약간 생겨요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a274">많이 생겨요</button>
+        </div>
+        <br>
+    </div>
+    <div id="q66">
+        <div class="next">9/9</div>
+        <div class="question">태양에 노출된 부분에 다크 스팟이 생기나요?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q66_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a275">생겨요</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q66_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a276">생기지 않아요 </button>
+            <br>
+           
+        </div>
+        <br>
+    </div>
+
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

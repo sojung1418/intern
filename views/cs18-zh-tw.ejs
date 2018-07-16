@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+    eclair</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">完成</div>
+
+    <div class="category-text" value="cs18">角質/肌膚: 皮膚問題的嚴重程度?</div>
+
+    <div id="q110">
+        <div class="next">1/5</div>
+        <div class="question">脱皮的主要部位是?</div>
+        <div class="answer">
+          <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a490">
+            嘴周 </button>
+          <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a491">
+            臉頰</button>
+          <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a492">
+            鼻翼兩側</button>
+            <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a493">
+                額頭 </button>
+            <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a494">
+                下巴</button>
+            <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a495">
+                沒有</button>
+             <button class="button_test_normal" name="q110_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a496">
+                其他</button>
+        </div>
+      </div>
+    <div id="q111">
+        <div class="next">2/5</div>
+        <div class="question">多久去一次角質？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a497">一周1-2次</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a498">2周1次</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a499">一個月1次以上</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q111_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a500">不做</button>
+            <br>
+        </div>
+    </div>
+    <div id = "q112">
+        <div class = "next">3/5</div>
+            <div class="question">你經常化妝嗎？</div><br>
+          <table class="answer">
+          <tr>
+            <td><input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q112_btns" value="1"></td>
+            <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q112_btns" value="2"></td>
+            <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q112_btns" value="3"></td>
+          
+          </tr>
+          <tr>
+            <td><div class="desc-text3">不是</div></td>
+            <td><div class="desc-text3">還可以</div></td>
+            <td><div class="desc-text3">是的</div></td>
+          </tr>
+          </table>
+          </div>
+          <div id = "q113">
+            <div class = "next">4/5</div>
+                <div class="question">肌膚不脫皮也粗糙嗎?</div><br>
+              <table class="answer">
+              <tr>
+                <td><input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q113_btns" value="1"></td>
+                <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q113_btns" value="2"></td>
+                <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q113_btns" value="3"></td>
+              
+              </tr>
+              <tr>
+                <td><div class="desc-text3">不是</div></td>
+                <td><div class="desc-text3">還可以</div></td>
+                <td><div class="desc-text3">是的</div></td>
+              </tr>
+              </table>
+              </div>
+              <div id = "q114">
+                <div class = "next">5/5</div>
+                    <div class="question">肌膚黯淡無光嗎?</div><br>
+                  <table class="answer">
+                  <tr>
+                    <td><input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q114_btns" value="1"></td>
+                    <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q114_btns" value="2"></td>
+                    <td> <input class="button_normal2 "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q114_btns" value="3"></td>
+                  </tr>
+                  <tr>
+                    <td><div class="desc-text3">不是</div></td>
+                    <td><div class="desc-text3">還可以</div></td>
+                    <td><div class="desc-text3">是的</div></td>
+                  </tr>
+                  </table>
+                  </div>
+   
+ 
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

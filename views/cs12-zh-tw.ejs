@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+
+    <img src="/images/button_close_normal.png"  style="float:left; margin-top:17px; padding-left:16px ">
+    <br><br>
+  <div class="category-text" value = "cs12">痘痘: 皮膚問題的嚴重程度?</div>
+  <div id="q91">
+    <div class="next">1/4</div>
+    <div class="question">皮膚上痘痘類型是?</div>
+    <div class="answer">
+        
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a380">
+        小痘痘(粟粒疹)</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a381">
+        黑頭</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a382">
+        化膿性痘痘(黃膿、疼痛)</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a383">
+        痤瘡(發炎變紅、堅硬、疼痛感)</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a384">
+        沒有</button>
+    </div>
+  </div>
+
+  <div id="q92">
+    <div class="next">2/4</div>
+    <div class="question">痘痘經常長的部位是?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a385">
+        額頭</button>
+      <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a386">
+        臉頰</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a387">
+            上臉頰/眼窩</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a388">
+            鼻子</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a389">
+            鼻尖</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a390">
+            眉間</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a391">
+            下巴</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a392">
+            嘴唇</button>
+          <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a393">
+            眼睛</button>
+            <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a394">
+                耳朵</button>
+                <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a395">
+                    沒有痘痘</button>
+    </div>
+  </div>
+  <div id="q93">
+    <div class="next">3/4</div>
+    <div class="question">痘痘頻繁嗎?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a396">一週一次</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a397">一個月一次</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a398">가偶爾一次</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a399">不長</button>
+    </div>
+  </div>
+
+
+  <div id="q94">
+    <div class="next">4/4</div>
+    <div class="question"> 如何處理痘痘?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a400">貼去痘貼</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a401">使用痘痘專用貼片產品</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a402">擠壓</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a403">摳</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a404">放任</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a405">其他</button>
+    </div>
+  </div>
+
+  <script>
+
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+
+  </script>
+ 
+  
+</body>
+</html>

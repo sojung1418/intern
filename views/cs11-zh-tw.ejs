@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        test</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">完成</div>
+
+    <div class="category-text" value="cs9">&&的膚質是?(彈力/皺紋)</div>
+    <div id="q80">
+        <div class="next">1/11</div>
+        <div class="question">不笑時，是否容易看出皺紋？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a335">不，微笑、皺眉、舉眉也沒有皺紋。</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a336">只做表情時</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a337">有無表情多看出皺紋。</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q80_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a338">沒有表情也有皺紋。</button>
+        </div>
+        <br>
+    </div>
+
+    <div id="q81">
+        <div class="next">2/11</div>
+        <div class="question">母親的兄弟姐妹皮膚看起來有多老？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a339">相比年齡年輕5~10歲</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a340">皮膚年齡與實際年齡相符</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a341">比實際年齡老5年</button>
+            
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a342">比實際年齡老5歲以上</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q81_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a343">無法回答（領養或忘記）</button>
+        </div>
+        <br>
+    </div>
+    <div id="q82">
+        <div class="next">3/11</div>
+        <div class="question">父親的兄弟姐妹皮膚看起來有多老？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a344">相比年齡年輕5~10歲</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a345">皮膚年齡與實際年齡相符</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a346">比實際年齡老5年</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a347">比實際年齡老5歲以上</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q82_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a348">無法回答（領養或忘記）</button>
+        </div>
+        <br>
+    </div>
+    <div id="q83">
+        <div class="next">4/11</div>
+        <div class="question">是否1年2周以上持續曬黑過皮膚？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a349">沒有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a350">1~5年左右</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a351">5~10年左右</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q83_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a352">10年以上</button>
+        </div>
+        <br>
+    </div>
+    <div id="q84">
+        <div class="next">5/11</div>
+        <div class="question">平時日曬次數是？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a353">幾乎沒有（大部分在室內、陽光不充足）</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a354">微弱（陽光不強烈，但通常有陽光）</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a355">中等（陽光較充足）</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q84_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a356">多（住在熱帶附近，陽光強烈）</button>
+        </div>
+        <br>
+    </div>
+    <div id="q85">
+        <div class="next">6/11</div>
+        <div class="question">您認為自己看起來有多老？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a357">比實際年齡年輕1~5年。</button>
+            <br>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a358">與實際年齡相同。</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a359">比實際年齡老5歲</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q85_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a360">比實際年齡老5歲以上。</button>
+        </div>
+        <br>
+    </div>
+    <div id="q86">
+        <div class="next">7/11</div>
+        <div class="question">經常抽煙（或經常被動吸煙）嗎？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a361">沒有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a362">正在戒煙</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a363">抽煙10年以上或目前也偶爾抽一下</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a364">每天抽煙</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q86_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a365">不抽煙，但身邊的人抽</button>
+        </div>
+        <br>
+    </div>
+    <div id="q87">
+        <div class="next">8/11</div>
+        <div class="question">請描述居住地的空氣污染程度。</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a366">乾淨</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a367">時而好壞</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a368">有一點污染。</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q87_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a369">空氣污染嚴重</button>
+        </div>
+        <br>
+    </div>
+    <div id="q88">
+        <div class="next">9/11</div>
+        <div class="question">平時飲食中，水果和蔬菜比重是？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a370">75~100%</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a371">25~75%</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a372">10~25%</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q88_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a373">0~10%</button>
+        </div>
+        <br>
+    </div>
+    <div id="q89">
+        <div class="next">10/11</div>
+        <div class="question">您原本膚色是（沒有曬黑時)？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a374">黑</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a375">中</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a376">白</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q89_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a377">非常白</button>
+        </div>
+        <br>
+    </div>
+    <div id="q90">
+        <div class="next">11/11</div>
+        <div class="question">65歲以上嗎？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q90_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a378">是</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q90_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a379">不是</button>
+            
+        </div>
+        <br>
+    </div>
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

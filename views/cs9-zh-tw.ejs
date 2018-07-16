@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        test</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">完成</div>
+
+    <div class="category-text" value = "cs9">&&的膚質是? (色素/無色素)</div>
+    <div id="q58">
+        <div class="next">1/9</div>
+        <div class="question">褐色創口（非粉紅色）癒合時間是？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a240">沒有或沒有注意到</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a241">一周</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a242">幾周</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q58_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a243">幾個月</button>
+        </div>
+        <br>
+    </div>
+    <div id="q59">
+        <div class="next">2/9</div>
+        <div class="question">上嘴唇或臉頰上是否有褐色斑點？過去是否去除過皮膚病變?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a244">沒有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a245">不清楚</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a246">有一點 </button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q59_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a247">有幾個 </button>
+        </div>
+        <br>
+    </div>
+    <div id="q60">
+        <div class="next">3/9</div>
+        <div class="question"> 臉上的深斑是否是曬出來的？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a248">沒有深斑</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a249">不知道</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a250">有點加重</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a251">非常嚴重</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q60_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a252">防曬每天都塗，卻不曬太陽（塗防曬目的是為了避免以上症狀，請選擇4號）</button>
+        </div>
+        <br>
+    </div>
+
+    <div id="q61">
+        <div class="next">4/9</div>
+        <div class="question">臉上是否長過雀斑（淺或深或灰色斑點）？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a253">沒有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a254">有過，但現在沒有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a255">目前也有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a256">多的嚴重</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q61_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a257">不知道</button>
+        </div>
+        <br>
+    </div>
+    <div id="q62">
+        <div class="next">5/9</div>
+        <div class="question">臉上是否長過雀斑（淺或深或灰色斑點）？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a258">沒有</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a259">有一點</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a260">較多</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q62_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a261">非常多</button>
+        </div>
+        <br>
+    </div>
+    <div id="q63">
+        <div class="next">6/9</div>
+        <div class="question">比平時曬太陽的時間更長時，皮膚有何種變化？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a262">只曬傷</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a263">曬傷變暗</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a264">逐漸變暗 </button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q63_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a265">原本是暗色肌膚，所以看不出變黑</button>
+        </div>
+        <br>
+    </div>
+    <div id="q64">
+        <div class="next">7/9</div>
+        <div class="question">連續幾天曬太陽會出現何種變化？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a266">曬傷、起水皰、無膚色變化</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a267">膚色變暗</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a268">變黑</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a269">原本是暗色肌膚，所以看不出變黑</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q64_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a270">不知道（如果幾乎不日曬，那麼請回憶以往記憶）</button>
+        </div>
+        <br>
+    </div>
+    <div id="q65">
+        <div class="next">8/9</div>
+        <div class="question">日曬下是否出現雀斑（大小為1-2mm的斑）？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a271">不長</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a272">幾乎不長</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a273">稍微長</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q65_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a274">長多</button>
+        </div>
+        <br>
+    </div>
+    <div id="q66">
+        <div class="next">9/9</div>
+        <div class="question">被日曬的部位是否出現暗點？</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q66_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a275">出現</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q66_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a276">不出現 </button>
+            <br>
+           
+        </div>
+        <br>
+    </div>
+
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>

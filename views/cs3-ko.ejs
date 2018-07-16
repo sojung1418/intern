@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+  
+</head>
+
+<body>
+
+  <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+  <div class="finish">완료</div>
+  <br>
+  <br>
+  <div class="category-text" value = "cs3">당신에 대해 알려주세요 </div>
+  <div id="q3">
+    <div class="next">1/5</div>
+    <div class="question">거주 지역을 선택하세요
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q3_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="">지역</button>
+      <br>
+
+    </div>
+  </div> 
+  <div id="q4">
+    <div class="next">2/5</div>
+    <div class="question">헤어 스타일은 어떤가요?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a1">숏컷</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a2">단발</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a3">어깨부근</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a4">긴 머리</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q5">
+    <div class="next">3/5</div>
+    <div class="question">직업을 말해주세요
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a5">학생</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a6">직장인</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a7">프리랜서</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a8">기타</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q6">
+    <div class="next">4/5</div>
+    <div class="question">결혼을 하셨나요?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q6_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a9">미혼</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q6_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a10">기혼</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q7">
+    <div class="next">5/5</div>
+    <div class="question">자녀가 있으신가요?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q7_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a11">있음</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q7_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a12">없음</button>
+      <br>
+    </div>
+  </div> 
+ 
+  <script>
+
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+  
+  </script>
+  </body>
+  </html>

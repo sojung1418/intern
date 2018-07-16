@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+
+    <img src="/images/button_close_normal.png"  style="float:left; margin-top:17px; padding-left:16px ">
+    <br><br>
+  <div class="category-text" value = "cs12">여드름: 피부 상태는 어떤가요?</div>
+  <div id="q91">
+    <div class="next">1/4</div>
+    <div class="question">주로 피부에 나는 여드름의 종류는 무엇인가요?</div>
+    <div class="answer">
+        
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a380">
+        좁쌀 여드름(화이트헤드)</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a381">
+        블랙헤드</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a382">
+       화농성 여드름(노란 고름,통증)</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a383">
+        결정성 여드름(붉은 염증 반응, 단단하게 만져짐, 통증)</button>
+      <button class="button_test_normal" name="q91_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a384">
+        여드름이 없어요</button>
+    </div>
+  </div>
+
+  <div id="q92">
+    <div class="next">2/4</div>
+    <div class="question">주로 여드름이 어디에 자주 생기나요?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a385">
+       이마</button>
+      <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a386">
+        볼</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a387">
+          윗볼/눈밑</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a388">
+          코</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a389">
+          코끝</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a390">
+          미간</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a391">
+          턱</button>
+        <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a392">
+          입술</button>
+          <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a393">
+            눈</button>
+            <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a394">
+                귀</button>
+                <button class="button_test_normal" name="q92_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a395">
+                    여드름이 없어요</button>
+    </div>
+  </div>
+  <div id="q93">
+    <div class="next">3/4</div>
+    <div class="question">여드름이 얼마나 자주 생기나요?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a396">일주일에 한 번 나요</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a397">한 달에 한 번 나요</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a398">가끔 나는 편이에요</button>
+      <button class="button_test_normal" name="q93_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a399">전혀 안 나요</button>
+    </div>
+  </div>
+
+
+  <div id="q94">
+    <div class="next">4/4</div>
+    <div class="question">여드름이 났을 때 어떻게 대처하시나요?</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a400">스팟 패치를 붙여요</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a401">여드름 스팟 제품을 사용해요</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a402">압출해요</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a403">긁거나 뜯어요</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a404">터질 때까지 건들지 않아요</button>
+      <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a405">기타</button>
+    </div>
+  </div>
+
+  <script>
+  
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+
+  </script>
+ 
+  
+</body>
+</html>

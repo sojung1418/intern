@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    eclair</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+  
+</head>
+
+<body>
+
+  <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+  <div class= "finish" >Completed</div>
+  <br>
+  <br>
+  <div class="category-text" value = "cs3">Let us know about yourself </div>
+  <div id="q3">
+    <div class="next">1/5</div>
+    <div class="question">Select where you live
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q3_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="">location</button>
+      <br>
+
+    </div>
+  </div> 
+  <div id="q4">
+    <div class="next">2/5</div>
+    <div class="question">What is your hair style?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a1">Short cut hair</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a2">Bobbed hair</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a3">Med length hair</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q4_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a4">Long hair</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q5">
+    <div class="next">3/5</div>
+    <div class="question">What is your job?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a5">Student</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a6">Office worker</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a7">Freelancer</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q5_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a8">Etc.</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q6">
+    <div class="next">4/5</div>
+    <div class="question">Do you get married?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q6_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a9">Single</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q6_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a10">Married</button>
+      <br>
+    </div>
+  </div> 
+  <div id="q7">
+    <div class="next">5/5</div>
+    <div class="question">Do you have a child?
+    </div>
+    <div class="answer">
+      <button class="button_test_normal" data-checked="check" name="q7_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a11">Yes</button>
+      <br>
+      <button class="button_test_normal" data-checked="check" name="q7_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a12">No</button>
+      <br>
+    </div>
+  </div> 
+ 
+  <script>
+
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+  
+  </script>
+  </body>
+  </html>

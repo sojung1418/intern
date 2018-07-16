@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    test</title>
+  <link rel='stylesheet' href='/stylesheets/style(test).css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+
+  
+</head>
+
+<body>
+
+  <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+  <div class= "finish" >Completed</div>
+  <br>
+  <br>
+  <div class="category-text" value = "cs4">Let us know about your tendency.</div>
+  <div id = "q8">
+    <div class = "next">1/4</div>
+        <div class="question">How many times do you make up in a week?</div><br>
+      <table class="answer">
+      <tr>
+        <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="1"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="2"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="3"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="4"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="5"></td>
+      </tr>
+      <tr>
+        <td><div class="desc-text">Not at all</div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text">Important</div></td>
+      </tr>
+      </table>
+      </div>
+      
+     <br>
+    
+    <div id = "q9">
+    <div class = "next">2/4</div>
+      <div class="question">How much do you care about appearance?</div>
+      <table class="answer">
+      <tr>
+        <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="1"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="2"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="3"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="4"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="5"></td>
+      </tr>
+      <tr>
+        <td><div class="desc-text">Not at al</div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text">Important</div></td>
+      </tr>
+      </table>
+      </div>
+
+
+  <div id="q10">
+    <div class="next">3/4</div>
+    <div class="question">What your skin’s strength?</div>
+    <div class="answer">
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a17">Clear skin without troubles</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a18">Young skin without wrinkles</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a19">Without pores and blemish</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a20">Less sensitive skin</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a21">Skin with white and bright tone</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a22">None</button>
+      <br>
+    </div>
+    <br>
+  </div>
+
+
+
+  <div id="q11">
+    <div class="next">4/4</div>
+    <div class="question">What’s your skin’s weakness</div>
+
+    <div class="answer">
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a23">Skin with a lot of acne</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a24">Skin with large pores</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a25">Skin with a lot of sebum</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a26">Dry skin</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check"name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a27">Skin with a lot of dead skin cells and rough texture</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a28">Sensitive skin</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a29">Skin with dark circles and dark tone</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a30">Perfect skin without any weakness!</button>
+      <br>
+    </div>
+  </div>
+  <script>
+
+  
+    var answers =  <%-JSON.stringify(list)-%> ;
+  
+  </script>
+  </body>
+  </html>

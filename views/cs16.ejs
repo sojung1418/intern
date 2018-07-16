@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+    eclair</title>
+    <link rel='stylesheet' href='/stylesheets/style(test).css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+</head>
+
+<body>
+
+    <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
+    <div class="finish">Completed</div>
+
+    <div class="category-text" value="cs14">Swelling: What’s your skin problem?</div>
+
+    <div id="q103">
+        <div class="next">1/4</div>
+        <div class="question">How many times your face is swelling?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a460">1~2 times a week</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a461">3~4 times a week</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a462">5~6 times a week</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q103_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a463">Barely</button>
+            <br>
+        </div>
+    </div>
+    <div id = "q104">
+        <div class = "next">2/4</div>
+            <div class="question">How much your face is swelling?</div><br>
+          <table class="answer">
+          <tr>
+            <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="1"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="2"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="3"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="4"></td>
+            <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q104_btns" value="5"></td>
+          </tr>
+          <tr>
+            <td><div class="desc-text">only<br>few</div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text"></div></td>
+            <td><div class="desc-text">Very<br>much</div></td>
+          </tr>
+          </table>
+          </div>
+    <div id="q105">
+        <div class="next">3/4</div>
+        <div class="question">Why your face is swelling?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a466">Stress</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a467">Lack of sleep</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a468">Too much natrium intake</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a469">Bio rhythm unbalance</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a470">Eating at night</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a471">None</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q105_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a472">Etc.</button>
+            <br>
+        </div>
+    </div>
+    <div id="q106">
+        <div class="next">4/4</div>
+        <div class="question">What do you do when your face is swelling?</div>
+        <div class="answer">
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a473">Ice bath</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a474">Hot bath</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a475">Massage</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a476">Use face line cream</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a477">Don’t care</button>
+            <br>
+            <button class="button_test_normal" data-checked="check" name="q106_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a478">Etc.</button>
+            <br>
+        </div>
+    </div>
+
+ 
+
+    <script>
+        var answers = <%-JSON.stringify(list)-%>;
+    </script>
+</body>
+
+</html>
