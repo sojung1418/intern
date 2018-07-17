@@ -6,7 +6,9 @@
   <title>eclair</title>
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <script type= 'text/javascript' src= '/javascripts/script.js'></script>
 
 
@@ -18,7 +20,9 @@
     <img src="/images/button_close_normal.png"  style="float:left; margin-top:17px; padding-left:16px ">
     <br><br>
   <div class="category-text" value = "cs12">여드름: 피부 상태는 어떤가요?</div>
-  <div id="q91">
+  <div  class="swiper-container">
+<div class="swiper-wrapper">
+  <div class="swiper-slide" id="q91">
     <div class="next">1/4</div>
     <div class="question">주로 피부에 나는 여드름의 종류는 무엇인가요?</div>
     <div class="answer">
@@ -36,7 +40,7 @@
     </div>
   </div>
 
-  <div id="q92">
+  <div class="swiper-slide" id="q92">
     <div class="next">2/4</div>
     <div class="question">주로 여드름이 어디에 자주 생기나요?</div>
     <div class="answer">
@@ -64,7 +68,7 @@
                     여드름이 없어요</button>
     </div>
   </div>
-  <div id="q93">
+  <div class="swiper-slide" id="q93">
     <div class="next">3/4</div>
     <div class="question">여드름이 얼마나 자주 생기나요?</div>
     <div class="answer">
@@ -76,7 +80,7 @@
   </div>
 
 
-  <div id="q94">
+  <div class="swiper-slide" id="q94">
     <div class="next">4/4</div>
     <div class="question">여드름이 났을 때 어떻게 대처하시나요?</div>
     <div class="answer">
@@ -88,6 +92,10 @@
       <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a405">기타</button>
     </div>
   </div>
+
+      </div>
+  </div>
+
 
   <script>
   
