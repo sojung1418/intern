@@ -283,13 +283,13 @@ $(document).ready(function () {
       } else {
         $(this).data("data-checked", "check");
       }
-      var strval = "";
+    
       survey.userid = q.data("userid");
       survey.cid = q.data("cid");
       survey.csid = q.data("csid");
       survey.qid = qid;
-      survey.answerType = "";
-      survey.answer = strval;
+      survey.answerType = "image";
+      survey.answer = $(this).val();
       setSurvey(survey);
     });
 
