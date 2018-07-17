@@ -17,7 +17,11 @@
 </head>
 
 <body>
-
+  <script>
+   
+    var answers =  <%-JSON.stringify(list)-%> ;
+  
+  </script>
   <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
   <div class="finish">완료</div>
   <br>
@@ -39,11 +43,11 @@ $(document).ready(function(){
 +'<div class="question">일주일에 화장을 얼마나 자주 하시나요?</div><br>'
 +'<table class="answer">'
 +'<tr>'
-+'<td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="1"></td>
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="2"></td>
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="3"></td>
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="4"></td>
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="5"></td>
++'<td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="1"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="2"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="3"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="4"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="5"></td>'
 +'</tr>'
 +'<tr>'
 +'<td><div class="desc-text">전혀</div></td>'
@@ -154,9 +158,7 @@ carousel.onFlip(function () {
 		}
 	}
   });
-  
-    var answers =  <%-JSON.stringify(list)-%> ;
-  
   </script>
+
   </body>
   </html>
