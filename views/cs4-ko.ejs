@@ -5,159 +5,123 @@
   <title>
     test</title>
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
-   <meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type= 'text/javascript' src= '/javascripts/script.js'></script> 
-  <script type= 'text/javascript' src= '/javascripts/SwipeView.js'></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
 
   
 </head>
 
 <body>
-  <script>
-   
-    var answers =  <%-JSON.stringify(list)-%> ;
-  
-  </script>
+
   <img src="/images/button_close_normal.png" style="float:left; margin-top:17px; padding-left:16px ">
   <div class="finish">완료</div>
   <br>
   <br>
   <div class="category-text" value = "cs4">당신의 성향을 알려주세요.</div>
-  <div id="wrapper"></div>
- 
-</body>
-<script>
+<div id="slider" class="swipe">
+<div clss="swipe-wrap">
+<div id = "q8">
+<div class = "next">1/4</div>
+<div class="question">일주일에 화장을 얼마나 자주 하시나요?</div><br>
+<table class="answer">
+<tr>
+<td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="1"></td>
+<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="2"></td>
+<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="3"></td>
+<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="4"></td>
+<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="5"></td>
+</tr>
+<tr>
+<td><div class="desc-text">전혀</div></td>
+<td><div class="desc-text"></div></td>
+<td><div class="desc-text"></div></td>
+<td><div class="desc-text"></div></td>
+<td><div class="desc-text">매일</div></td>
+</tr>
+</table>
+</div>
+      
+     <br>
+     </div>
+<div clss="swipe-wrap">
+    <div id = "q9">
+    <div class = "next">2/4</div>
+      <div class="question">외모가 얼마나 중요하나요?</div>
+      <table class="answer">
+      <tr>
+        <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="1"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="2"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="3"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="4"></td>
+        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="5"></td>
+      </tr>
+      <tr>
+        <td><div class="desc-text">중요하지 않다</div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text"></div></td>
+        <td><div class="desc-text">중요하다</div></td>
+      </tr>
+      </table>
+      </div>
 
+ </div>
+<div clss="swipe-wrap">
+  <div id="q10">
+    <div class="next">3/4</div>
+    <div class="question">자신의 피부 장점을 적어주세요.(중복선택 가능)</div>
+    <div class="answer">
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a17">트러블없이 깨끗한 피부</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a18">주름 없이 동안 피부</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a19">모공, 잡티가 거의 없는 피부</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a20">예민하지 않아서 자극이 적은 피부</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a21">피부톤이 하얗고 환한 피부</button>
+    <br>
+    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a22">없다</button>
+      <br>
+    </div>
+    <br>
+  </div>
+
+
+ </div>
+<div clss="swipe-wrap">
+  <div id="q11">
+    <div class="next">4/4</div>
+    <div class="question">자신의 피부 단점을 적어주세요.(중복선택 가능)</div>
+
+    <div class="answer">
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a23">여드름이 많이 나는 피부</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a24">모공이 큰 피부</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a25">피지분비/개기름이 많이 나오는 피부</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a26">관리해도 건조한 피부</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check"name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a27">각질이 자주 생기고 피부결이 거치며 화장이 자꾸 뜨는 피부</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a28">항상 자극적이고 민감한 피부</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a29">다크서클이 많고 피부톤이 항상 칙칙한 피부</button>
+    <br>
+    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a30">단점이 없는 완벽한 피부!</button>
+      <br>
+    </div>
+  </div>
+
+  </div>
+ </div>
+ <script>
   
-  console.log("ready");
-
-  var	carousel,
-	el,
-	i,
-	page,
-	slides = [
-'<div id = "q8">'
-+'<div class = "next">1/4</div>'
-+'<div class="question">일주일에 화장을 얼마나 자주 하시나요?</div><br>'
-+'<table class="answer">'
-+'<tr>'
-+'<td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="1"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="2"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="3"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="4"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="5"></td>'
-+'</tr>'
-+'<tr>'
-+'<td><div class="desc-text">전혀</div></td>'
-+'<td><div class="desc-text"></div></td>'
-+'<td><div class="desc-text"></div></td>'
-+'<td><div class="desc-text"></div></td>'
-+'<td><div class="desc-text">매일</div></td>'
-+'</tr>'
-+'</table>'
-+'</div>'
-+''
-+'<br>'
-,
-'<div id = "q9">'
-+'<div class = "next">2/4</div>'
-+'<div class="question">외모가 얼마나 중요하나요?</div>'
-+'<table class="answer">'
-+'<tr>'
-+'<td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="1"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="2"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="3"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="4"></td>'
-+'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="5"></td>'
-+'</tr>'
-+'<tr>'
-+'<td><div class="desc-text">중요하지 않다</div></td>'
-+'<td><div class="desc-text"></div></td>'
-+'<td><div class="desc-text"></div></td>'
-+'<td><div class="desc-text"></div></td>'
-+'<td><div class="desc-text">중요하다</div></td>'
-+'</tr>'
-+'</table>'
-+'</div>'
-,
-'<div id="q10">'
-+'<div class="next">3/4</div>'
-+'<div class="question">자신의 피부 장점을 적어주세요.(중복선택 가능)</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a17">트러블없이 깨끗한 피부</button>'
-+'<br>'
-+'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a18">주름 없이 동안 피부</button>'
-+'<br>'
-+'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a19">모공, 잡티가 거의 없는 피부</button>'
-+'<br>'
-+'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a20">예민하지 않아서 자극이 적은 피부</button>'
-+'<br>'
-+'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a21">피부톤이 하얗고 환한 피부</button>'
-+'<br>'
-+'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a22">없다</button>'
-+'<br>'
-+'</div>'
-+'<br>'
-+'</div>'
-,
-'<div id="q11">'
-+'<div class="next">4/4</div>'
-+'<div class="question">자신의 피부 단점을 적어주세요.(중복선택 가능)</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a23">여드름이 많이 나는 피부</button>'
-+'<br>'
-+'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a24">모공이 큰 피부</button>'
-+'<br>'
-+'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a25">피지분비/개기름이 많이 나오는 피부</button>'
-+'<br>'
-+'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a26">관리해도 건조한 피부</button>'
-+'<br>'
-+'<button class="button_test_normal"  data-checked="check"name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a27">각질이 자주 생기고 피부결이 거치며 화장이 자꾸 뜨는 피부</button>'
-+'<br>'
-+'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a28">항상 자극적이고 민감한 피부</button>'
-+'<br>'
-+'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a29">다크서클이 많고 피부톤이 항상 칙칙한 피부</button>'
-+'<br>'
-+'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a30">단점이 없는 완벽한 피부!</button>'
-+'<br>'
-+'</div>'
-+'</div>'
-];
-
-  carousel = new SwipeView('#wrapper', {
-    numberOfPages: slides.length,
-    hastyPageFlip: true
-  });
-
-  for (i=0; i<3; i++) {
-    page = i==0 ? slides.length-1 : i-1;
+    var answers =  <%-JSON.stringify(list)-%> ;
   
-    el = document.createElement('span');
-    el.innerHTML = slides[page];
-    alert(slides[page]);
-    carousel.masterPages[i].appendChild(el)
-  }
-
-carousel.onFlip(function () {
-	var el,
-		upcoming,
-		i;
-
-	for (i=0; i<3; i++) {
-		upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
-
-		if (upcoming != carousel.masterPages[i].dataset.pageIndex) {
-			el = carousel.masterPages[i].querySelector('span');
-			el.innerHTML = slides[upcoming];
-		}
-	}
-  });
-
   </script>
-
-
+  </body>
   </html>
