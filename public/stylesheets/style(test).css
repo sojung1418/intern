@@ -33,6 +33,16 @@ font: 13px;
   font-family: 'NotoSansCJKkr-Regular';
   margin-top:18px;
 }
+.finish-en{
+  float: left;
+margin-left: 240px;
+font: 12px;
+  line-height: 19px;
+  color:#f2f2f2;
+  padding-bottom: 31px;
+  font-family: 'NotoSansCJKkr-Regular';
+  margin-top:18px;
+}
 /*완료버튼 활성화 후*/
 .finish_focused{
   
