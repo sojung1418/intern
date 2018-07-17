@@ -18,6 +18,9 @@
     <div class="finish">완료</div>
     <br><br>
   <div class="category-text" value = "cs6">당신의 취향을 알려주세요.</div>
+    <div id="wrapper"></div>
+ 
+</body>
 <script>
  $(document).ready(function(){
   
@@ -408,7 +411,7 @@ carousel.onFlip(function () {
 		}
 	}
   });
-
+    });
     
   
       var answers =  <%-JSON.stringify(list)-%> ;
@@ -416,8 +419,6 @@ carousel.onFlip(function () {
     </script>
 
     
-      var answers =  <%-JSON.stringify(list)-%> ;
+    
 
-    </script>
-</body>
 </html>

@@ -21,7 +21,9 @@
   <br>
   <br>
   <div class="category-text" value = "cs4">請告訴我們您的傾向。</div>
+   <div id="wrapper"></div>
  
+</body>
  <script>
  $(document).ready(function(){
   
@@ -151,10 +153,10 @@ carousel.onFlip(function () {
 		}
 	}
   });
-
+    });
   
     var answers =  <%-JSON.stringify(list)-%> ;
   
   </script>
-  </body>
+
   </html>
