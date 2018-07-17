@@ -7,7 +7,9 @@
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -19,7 +21,7 @@
     <div class="finish">완료</div>
 
     <div class="category-text" value="cs9">&&님의 피부 타입은? (탄력/주름)</div>
-    <div id="q80">
+    <div class = "swiper-slide" id="q80">
         <div class="next">1/11</div>
         <div class="question">웃거나 찡그리지 않은 평소 모습에서 주름이 잘 보이나요?</div>
         <div class="answer">
@@ -34,7 +36,7 @@
         <br>
     </div>
 
-    <div id="q81">
+    <div class = "swiper-slide" id="q81">
         <div class="next">2/11</div>
         <div class="question">어머니를 비롯 외가쪽 친척들의 얼굴 피부는 얼마나 나이 들어 보이나요/보였나요?</div>
         <div class="answer">
@@ -51,7 +53,7 @@
         </div>
         <br>
     </div>
-    <div id="q82">
+    <div class = "swiper-slide" id="q82">
         <div class="next">3/11</div>
         <div class="question">아버지를 비롯 친가쪽 친척들의 얼굴 피부는 얼마나 나이 들어 보이나요/보였나요?</div>
         <div class="answer">
@@ -67,7 +69,7 @@
         </div>
         <br>
     </div>
-    <div id="q83">
+    <div class = "swiper-slide" id="q83">
         <div class="next">4/11</div>
         <div class="question">1년에 2주 이상 지속적으로 자신의 피부를 태운 경험이 있었나요?</div>
         <div class="answer">
@@ -81,7 +83,7 @@
         </div>
         <br>
     </div>
-    <div id="q84">
+    <div class = "swiper-slide" id="q84">
         <div class="next">5/11</div>
         <div class="question">일상생활 중에서 하루의 일광 노출은 얼마나 되나요?</div>
         <div class="answer">
@@ -95,7 +97,7 @@
         </div>
         <br>
     </div>
-    <div id="q85">
+    <div class = "swiper-slide" id="q85">
         <div class="next">6/11</div>
         <div class="question">자신은 얼마나 나이 들어 보인다고 생각하시나요?</div>
         <div class="answer">
@@ -109,7 +111,7 @@
         </div>
         <br>
     </div>
-    <div id="q86">
+    <div class = "swiper-slide" id="q86">
         <div class="next">7/11</div>
         <div class="question">살면서 담배를 얼마나 많이 피웠나요(혹은 담배에 얼마나 많이 노출되었나요)?</div>
         <div class="answer">
@@ -125,7 +127,7 @@
         </div>
         <br>
     </div>
-    <div id="q87">
+    <div class = "swiper-slide" id="q87">
         <div class="next">8/11</div>
         <div class="question">거주지의 공기 오염은 어떤가요?</div>
         <div class="answer">
@@ -139,7 +141,7 @@
         </div>
         <br>
     </div>
-    <div id="q88">
+    <div class = "swiper-slide" id="q88">
         <div class="next">9/11</div>
         <div class="question">식사에서 과일과 채소가 차지하는 비율이 어느 정도인가요?</div>
         <div class="answer">
@@ -153,7 +155,7 @@
         </div>
         <br>
     </div>
-    <div id="q89">
+    <div class = "swiper-slide" id="q89">
         <div class="next">10/11</div>
         <div class="question">태닝을 하지 않았을 때의 피부 색은?</div>
         <div class="answer">
@@ -167,7 +169,7 @@
         </div>
         <br>
     </div>
-    <div id="q90">
+    <div class = "swiper-slide" id="q90">
         <div class="next">11/11</div>
         <div class="question">65세 이상이신가요?</div>
         <div class="answer">
@@ -178,7 +180,8 @@
         </div>
         <br>
     </div>
-
+   </div> 
+     </div>
     <script>
         var answers = <%-JSON.stringify(list)-%>;
     </script>

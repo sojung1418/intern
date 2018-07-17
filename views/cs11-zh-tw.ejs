@@ -7,7 +7,9 @@
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -19,7 +21,7 @@
     <div class="finish">完成</div>
 
     <div class="category-text" value="cs9">&&的膚質是?(彈力/皺紋)</div>
-    <div id="q80">
+    <div class = "swiper-slide" id="q80">
         <div class="next">1/11</div>
         <div class="question">不笑時，是否容易看出皺紋？</div>
         <div class="answer">
@@ -34,7 +36,7 @@
         <br>
     </div>
 
-    <div id="q81">
+    <div class = "swiper-slide" id="q81">
         <div class="next">2/11</div>
         <div class="question">母親的兄弟姐妹皮膚看起來有多老？</div>
         <div class="answer">
@@ -51,7 +53,7 @@
         </div>
         <br>
     </div>
-    <div id="q82">
+    <div class = "swiper-slide" id="q82">
         <div class="next">3/11</div>
         <div class="question">父親的兄弟姐妹皮膚看起來有多老？</div>
         <div class="answer">
@@ -67,7 +69,7 @@
         </div>
         <br>
     </div>
-    <div id="q83">
+    <div class = "swiper-slide" id="q83">
         <div class="next">4/11</div>
         <div class="question">是否1年2周以上持續曬黑過皮膚？</div>
         <div class="answer">
@@ -81,7 +83,7 @@
         </div>
         <br>
     </div>
-    <div id="q84">
+    <div class = "swiper-slide" id="q84">
         <div class="next">5/11</div>
         <div class="question">平時日曬次數是？</div>
         <div class="answer">
@@ -95,7 +97,7 @@
         </div>
         <br>
     </div>
-    <div id="q85">
+    <div class = "swiper-slide" id="q85">
         <div class="next">6/11</div>
         <div class="question">您認為自己看起來有多老？</div>
         <div class="answer">
@@ -110,7 +112,7 @@
         </div>
         <br>
     </div>
-    <div id="q86">
+    <div class = "swiper-slide" id="q86">
         <div class="next">7/11</div>
         <div class="question">經常抽煙（或經常被動吸煙）嗎？</div>
         <div class="answer">
@@ -126,7 +128,7 @@
         </div>
         <br>
     </div>
-    <div id="q87">
+    <div class = "swiper-slide" id="q87">
         <div class="next">8/11</div>
         <div class="question">請描述居住地的空氣污染程度。</div>
         <div class="answer">
@@ -140,7 +142,7 @@
         </div>
         <br>
     </div>
-    <div id="q88">
+    <div class = "swiper-slide" id="q88">
         <div class="next">9/11</div>
         <div class="question">平時飲食中，水果和蔬菜比重是？</div>
         <div class="answer">
@@ -154,7 +156,7 @@
         </div>
         <br>
     </div>
-    <div id="q89">
+    <div class = "swiper-slide" id="q89">
         <div class="next">10/11</div>
         <div class="question">您原本膚色是（沒有曬黑時)？</div>
         <div class="answer">
@@ -168,7 +170,7 @@
         </div>
         <br>
     </div>
-    <div id="q90">
+    <div class = "swiper-slide" id="q90">
         <div class="next">11/11</div>
         <div class="question">65歲以上嗎？</div>
         <div class="answer">
@@ -179,7 +181,8 @@
         </div>
         <br>
     </div>
-
+   </div> 
+     </div>
     <script>
         var answers = <%-JSON.stringify(list)-%>;
     </script>

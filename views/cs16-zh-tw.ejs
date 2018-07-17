@@ -8,7 +8,9 @@
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -20,8 +22,9 @@
     <div class="finish">完成</div>
 
     <div class="category-text" value="cs14">水腫: 皮膚問題的嚴重程度?</div>
-
-    <div id="q103">
+    <div  class="swiper-container">
+<div class="swiper-wrapper">
+    <div class = "swiper-slide" id="q103">
         <div class="next">1/4</div>
         <div class="question">臉經常水腫嗎?</div>
         <div class="answer">
@@ -35,7 +38,7 @@
             <br>
         </div>
     </div>
-    <div id = "q104">
+    <div class = "swiper-slide" id = "q104">
         <div class = "next">2/4</div>
             <div class="question">臉種程度是？</div><br>
           <table class="answer">
@@ -55,7 +58,7 @@
           </tr>
           </table>
           </div>
-    <div id="q105">
+    <div class = "swiper-slide" id="q105">
         <div class="next">3/4</div>
         <div class="question">腫臉的主要原因是？</div>
         <div class="answer">
@@ -75,7 +78,7 @@
             <br>
         </div>
     </div>
-    <div id="q106">
+    <div class = "swiper-slide" id="q106">
         <div class="next">4/4</div>
         <div class="question">臉腫時怎樣管理?</div>
         <div class="answer">
@@ -94,7 +97,8 @@
         </div>
     </div>
 
- 
+    </div> 
+     </div>
 
     <script>
         var answers = <%-JSON.stringify(list)-%>;

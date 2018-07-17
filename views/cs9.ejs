@@ -7,7 +7,9 @@
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -19,7 +21,9 @@
     <div class="finish">Completed</div>
 
     <div class="category-text" value = "cs9">What’s &&’s skin type?(Pigmentation/Non-pigmentation)</div>
-    <div id="q58">
+      <div  class="swiper-container">
+<div class="swiper-wrapper">
+    <div class = "swiper-slide" id="q58">
         <div class="next">1/9</div>
         <div class="question">After you get injury, how long scars remain on the skin? (Brown scar, not pink one)</div>
         <div class="answer">
@@ -33,7 +37,7 @@
         </div>
         <br>
     </div>
-    <div id="q59">
+    <div class = "swiper-slide" id="q59">
         <div class="next">2/9</div>
         <div class="question">Do you even had dots or brown spots on the cheeks or upper lip? Or did you ever remove it before?</div>
         <div class="answer">
@@ -47,7 +51,7 @@
         </div>
         <br>
     </div>
-    <div id="q60">
+    <div class = "swiper-slide" id="q60">
         <div class="next">3/9</div>
         <div class="question"> Does your dot get deeper due to the sun light?</div>
         <div class="answer">
@@ -64,7 +68,7 @@
         <br>
     </div>
 
-    <div id="q61">
+    <div class = "swiper-slide" id="q61">
         <div class="next">4/9</div>
         <div class="question">Did you have been diagnosed with freckle?</div>
         <div class="answer">
@@ -80,7 +84,7 @@
         </div>
         <br>
     </div>
-    <div id="q62">
+    <div class = "swiper-slide" id="q62">
         <div class="next">5/9</div>
         <div class="question">Did you have small brown dots on the face, chest, back or arms?</div>
         <div class="answer">
@@ -94,7 +98,7 @@
         </div>
         <br>
     </div>
-    <div id="q63">
+    <div class = "swiper-slide" id="q63">
         <div class="next">6/9</div>
         <div class="question">How your skin reacts where there is too much exposure to the sunlight?</div>
         <div class="answer">
@@ -108,7 +112,7 @@
         </div>
         <br>
     </div>
-    <div id="q64">
+    <div class = "swiper-slide" id="q64">
         <div class="next">7/9</div>
         <div class="question"> How your skin reacts where there is a series of exposure to the sunlight for many days?</div>
         <div class="answer">
@@ -124,7 +128,7 @@
         </div>
         <br>
     </div>
-    <div id="q65">
+    <div class = "swiper-slide" id="q65">
         <div class="next">8/9</div>
         <div class="question">Do you have any freckle when you go outside?</div>
         <div class="answer">
@@ -138,7 +142,7 @@
         </div>
         <br>
     </div>
-    <div id="q66">
+    <div class = "swiper-slide" id="q66">
         <div class="next">9/9</div>
         <div class="question">Do you get dark spots when the area is exposed to the sun?</div>
         <div class="answer">
@@ -150,7 +154,8 @@
         </div>
         <br>
     </div>
-
+   </div> 
+     </div>
 
     <script>
         var answers = <%-JSON.stringify(list)-%>;

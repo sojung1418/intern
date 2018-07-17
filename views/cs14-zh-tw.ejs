@@ -8,7 +8,9 @@
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -20,9 +22,11 @@
     <div class="finish">完成</div>
 
     <div class="category-text" value="cs14">皺紋/彈力/老化: 皮膚問題的嚴重程度?</div>
+        <div  class="swiper-container">
+<div class="swiper-wrapper">
 
 
-   <div id="q98-1">
+   <div class = "swiper-slide" id="q98-1">
         <div class="next">1/4</div>
         <div class="question">是否出現鬆弛?
         </div>
@@ -67,7 +71,7 @@
             </table>
         </div>
          </div>
-         <div id="q98-2">
+         <div class = "swiper-slide" id="q98-2">
         <div class="next">2/4</div>
         <div class="question">是否出現鬆弛?
         </div>
@@ -112,7 +116,7 @@
             </table>
         </div>
          </div>
-         <div id="q98-3">
+         <div class = "swiper-slide" id="q98-3">
         <div class="next">3/4</div>
         <div class="question">是否出現鬆弛?
         </div>
@@ -157,7 +161,7 @@
             </table>
         </div>
     </div>
-    <div id="q99">
+    <div class = "swiper-slide" id="q99">
         <div class="next">4/4</div>
         <div class="question">皺紋較多的地方是?</div>
         <div class="answer">
@@ -176,7 +180,8 @@
         </div>
       </div>
     
-   
+      </div> 
+     </div>
 
     <script>
         var answers = <%-JSON.stringify(list)-%>;

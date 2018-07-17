@@ -7,7 +7,9 @@
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -19,7 +21,9 @@
     <div class="finish">完成</div>
 
     <div class="category-text" value = "cs9">&&的膚質是? (色素/無色素)</div>
-    <div id="q58">
+      <div  class="swiper-container">
+<div class="swiper-wrapper">
+    <div class = "swiper-slide" id="q58">
         <div class="next">1/9</div>
         <div class="question">褐色創口（非粉紅色）癒合時間是？</div>
         <div class="answer">
@@ -33,7 +37,7 @@
         </div>
         <br>
     </div>
-    <div id="q59">
+    <div class = "swiper-slide" id="q59">
         <div class="next">2/9</div>
         <div class="question">上嘴唇或臉頰上是否有褐色斑點？過去是否去除過皮膚病變?</div>
         <div class="answer">
@@ -47,7 +51,7 @@
         </div>
         <br>
     </div>
-    <div id="q60">
+    <div class = "swiper-slide" id="q60">
         <div class="next">3/9</div>
         <div class="question"> 臉上的深斑是否是曬出來的？</div>
         <div class="answer">
@@ -64,7 +68,7 @@
         <br>
     </div>
 
-    <div id="q61">
+    <div class = "swiper-slide" id="q61">
         <div class="next">4/9</div>
         <div class="question">臉上是否長過雀斑（淺或深或灰色斑點）？</div>
         <div class="answer">
@@ -80,7 +84,7 @@
         </div>
         <br>
     </div>
-    <div id="q62">
+    <div class = "swiper-slide" id="q62">
         <div class="next">5/9</div>
         <div class="question">臉上是否長過雀斑（淺或深或灰色斑點）？</div>
         <div class="answer">
@@ -94,7 +98,7 @@
         </div>
         <br>
     </div>
-    <div id="q63">
+    <div class = "swiper-slide" id="q63">
         <div class="next">6/9</div>
         <div class="question">比平時曬太陽的時間更長時，皮膚有何種變化？</div>
         <div class="answer">
@@ -108,7 +112,7 @@
         </div>
         <br>
     </div>
-    <div id="q64">
+    <div class = "swiper-slide" id="q64">
         <div class="next">7/9</div>
         <div class="question">連續幾天曬太陽會出現何種變化？</div>
         <div class="answer">
@@ -124,7 +128,7 @@
         </div>
         <br>
     </div>
-    <div id="q65">
+    <div class = "swiper-slide" id="q65">
         <div class="next">8/9</div>
         <div class="question">日曬下是否出現雀斑（大小為1-2mm的斑）？</div>
         <div class="answer">
@@ -138,7 +142,7 @@
         </div>
         <br>
     </div>
-    <div id="q66">
+    <div class = "swiper-slide" id="q66">
         <div class="next">9/9</div>
         <div class="question">被日曬的部位是否出現暗點？</div>
         <div class="answer">
@@ -150,7 +154,8 @@
         </div>
         <br>
     </div>
-
+   </div> 
+     </div>
 
     <script>
         var answers = <%-JSON.stringify(list)-%>;

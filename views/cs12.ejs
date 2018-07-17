@@ -6,7 +6,9 @@
   <title>eclair</title>
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <script type= 'text/javascript' src= '/javascripts/script.js'></script>
 
 
@@ -19,7 +21,9 @@
     <div class="finish">Completed</div>
     <br><br>
   <div class="category-text" value = "cs12">Acne: What’s your skin troubles?</div>
-  <div id="q91">
+      <div  class="swiper-container">
+<div class="swiper-wrapper">
+  <div class = "swiper-slide" id="q91">
     <div class="next">1/4</div>
     <div class="question">What kinds of acne do you have?</div>
     <div class="answer">
@@ -37,7 +41,7 @@
     </div>
   </div>
 
-  <div id="q92">
+  <div class = "swiper-slide" id="q92">
     <div class="next">2/4</div>
     <div class="question">Which part of your face has acne?</div>
     <div class="answer">
@@ -65,7 +69,7 @@
                     No acne</button>
     </div>
   </div>
-  <div id="q93">
+  <div class = "swiper-slide" id="q93">
     <div class="next">3/4</div>
     <div class="question">How many times do you get acne?</div>
     <div class="answer">
@@ -77,7 +81,7 @@
   </div>
 
 
-  <div id="q94">
+  <div class = "swiper-slide" id="q94">
     <div class="next">4/4</div>
     <div class="question">How do you treat acne?</div>
     <div class="answer">
@@ -89,7 +93,8 @@
       <button class="button_test_normal" name="q94_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a405">Etc.</button>
     </div>
   </div>
-
+   </div> 
+     </div>
   <script>
   
     var answers =  <%-JSON.stringify(list)-%> ;

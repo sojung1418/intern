@@ -6,7 +6,9 @@
   <title>eclair</title>
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <script type= 'text/javascript' src= '/javascripts/script.js'></script>
 </head>
 
@@ -18,8 +20,9 @@
   <br>
   <br>
   <div class="category-text" value = "cs5">Let us know about your skin care</div>
-
-  <div id="q12">
+  <div  class="swiper-container">
+<div class="swiper-wrapper">
+  <div class = "swiper-slide" id="q12">
     <div class="next">1/3</div>
     <div class="question">How many cosmetics do you have?.</div>
     <input type="text" id="q12_text" data-answerType="at_str_s" />
@@ -27,7 +30,7 @@
 
 
 
-  <div id="q13">
+  <div class = "swiper-slide" id="q13">
     <div class="next">2/3</div>
     <div class="question">Select the cosmetics that you are using currently.</div>
     <form class="answer">
@@ -56,7 +59,7 @@
 
     </form>
 </div>
-    <div id="q14">
+    <div class = "swiper-slide" id="q14">
       <div class="next">3/3</div>
       <div class="question">스킨 케어 제품을 구매할 때 1회 최대 구매 예산은 얼마인가요?</div>
       <div class="answer">
@@ -70,7 +73,8 @@
         <br>
       </div>
     </div>
-    
+       </div> 
+     </div>
 
     <script>
     

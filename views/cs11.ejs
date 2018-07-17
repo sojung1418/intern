@@ -6,8 +6,9 @@
         test</title>
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -19,7 +20,7 @@
     <div class="finish">Completed</div>
 
     <div class="category-text" value="cs11">What’s &&’s skin type?(Elasticity/Wrinkle)</div>
-    <div id="q80">
+    <div class = "swiper-slide" id="q80">
         <div class="next">1/11</div>
         <div class="question">Do you have deep wrinkles even when you don’t have any expressions?</div>
         <div class="answer">
@@ -34,7 +35,7 @@
         <br>
     </div>
 
-    <div id="q81">
+    <div class = "swiper-slide" id="q81">
         <div class="next">2/11</div>
         <div class="question">Does your relatives on your mother side look older? How much?</div>
         <div class="answer">
@@ -51,7 +52,7 @@
         </div>
         <br>
     </div>
-    <div id="q82">
+    <div class = "swiper-slide" id="q82">
         <div class="next">3/11</div>
         <div class="question">Does your relatives on your father side look older? How much?</div>
         <div class="answer">
@@ -67,7 +68,7 @@
         </div>
         <br>
     </div>
-    <div id="q83">
+    <div class = "swiper-slide" id="q83">
         <div class="next">4/11</div>
         <div class="question">Do you get tanned more than 2 weeks within a year?</div>
         <div class="answer">
@@ -81,7 +82,7 @@
         </div>
         <br>
     </div>
-    <div id="q84">
+    <div class = "swiper-slide" id="q84">
         <div class="next">5/11</div>
         <div class="question">How much are you exposed to the sunlight during the day?</div>
         <div class="answer">
@@ -95,7 +96,7 @@
         </div>
         <br>
     </div>
-    <div id="q85">
+    <div class = "swiper-slide" id="q85">
         <div class="next">6/11</div>
         <div class="question">Do you think you look older than your age? How much?</div>
         <div class="answer">
@@ -109,7 +110,7 @@
         </div>
         <br>
     </div>
-    <div id="q86">
+    <div class = "swiper-slide" id="q86">
         <div class="next">7/11</div>
         <div class="question">How much do you smoke? (or how much do you exposed to cigarette?)</div>
         <div class="answer">
@@ -125,7 +126,7 @@
         </div>
         <br>
     </div>
-    <div id="q87">
+    <div class = "swiper-slide" id="q87">
         <div class="next">8/11</div>
         <div class="question">What about the air quality in where you live.</div>
         <div class="answer">
@@ -139,7 +140,7 @@
         </div>
         <br>
     </div>
-    <div id="q88">
+    <div class = "swiper-slide" id="q88">
         <div class="next">9/11</div>
         <div class="question">How much do you eat fruits and vegetables?</div>
         <div class="answer">
@@ -153,7 +154,7 @@
         </div>
         <br>
     </div>
-    <div id="q89">
+    <div class = "swiper-slide" id="q89">
         <div class="next">10/11</div>
         <div class="question">What is your original skin tone (without tanning)?</div>
         <div class="answer">
@@ -167,7 +168,7 @@
         </div>
         <br>
     </div>
-    <div id="q90">
+    <div class = "swiper-slide" id="q90">
         <div class="next">11/11</div>
         <div class="question">Do you 65 years old or over?</div>
         <div class="answer">
@@ -178,7 +179,8 @@
         </div>
         <br>
     </div>
-
+   </div> 
+     </div>
     <script>
         var answers = <%-JSON.stringify(list)-%>;
     </script>

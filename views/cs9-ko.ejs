@@ -7,7 +7,9 @@
     <link rel='stylesheet' href='/stylesheets/style(test).css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -19,7 +21,9 @@
     <div class="finish">완료</div>
 
     <div class="category-text" value = "cs9">&&님의 피부 타입은? (색소/비색소)</div>
-    <div id="q58">
+      <div  class="swiper-container">
+<div class="swiper-wrapper">
+    <div class = "swiper-slide" id="q58">
         <div class="next">1/9</div>
         <div class="question">외상 후에 갈색(분홍색은 아님)의 상처 자국이 피부에 얼마나 오래 존재하나요?</div>
         <div class="answer">
@@ -33,7 +37,7 @@
         </div>
         <br>
     </div>
-    <div id="q59">
+    <div class = "swiper-slide" id="q59">
         <div class="next">2/9</div>
         <div class="question">윗입술이나 두 뺨에 짙은 점이나 갈색 반점이 있나요? 혹은 과거에 병변을 제거한 경험이 있나요?</div>
         <div class="answer">
@@ -47,7 +51,7 @@
         </div>
         <br>
     </div>
-    <div id="q60">
+    <div class = "swiper-slide" id="q60">
         <div class="next">3/9</div>
         <div class="question"> 얼굴의 짙은 점은 햇볕에 의해 악화되나요?</div>
         <div class="answer">
@@ -64,7 +68,7 @@
         <br>
     </div>
 
-    <div id="q61">
+    <div class = "swiper-slide" id="q61">
         <div class="next">4/9</div>
         <div class="question">얼굴에 기미(옅거나 짙은 갈색 혹은 회색 반점)로 진단받은 적이 있나요?</div>
         <div class="answer">
@@ -80,7 +84,7 @@
         </div>
         <br>
     </div>
-    <div id="q62">
+    <div class = "swiper-slide" id="q62">
         <div class="next">5/9</div>
         <div class="question">얼굴, 가슴, 등, 양팔에 작은 갈색 점(주근깨, 일광 흑자)이 있거나, 있었나요?</div>
         <div class="answer">
@@ -94,7 +98,7 @@
         </div>
         <br>
     </div>
-    <div id="q63">
+    <div class = "swiper-slide" id="q63">
         <div class="next">6/9</div>
         <div class="question">평소보다 태양에 많이 노출되었을 때 피부는 어떻게 반응하나요?</div>
         <div class="answer">
@@ -108,7 +112,7 @@
         </div>
         <br>
     </div>
-    <div id="q64">
+    <div class = "swiper-slide" id="q64">
         <div class="next">7/9</div>
         <div class="question">여러 날 동안 연속해서 태양에 노출되면 어떤 일이 일어났나요?</div>
         <div class="answer">
@@ -124,7 +128,7 @@
         </div>
         <br>
     </div>
-    <div id="q65">
+    <div class = "swiper-slide" id="q65">
         <div class="next">8/9</div>
         <div class="question">햇볕에 나가면, 주근깨(작은 1~2mm 크기의 편평한 점)가 생기나요?</div>
         <div class="answer">
@@ -138,7 +142,7 @@
         </div>
         <br>
     </div>
-    <div id="q66">
+    <div class = "swiper-slide" id="q66">
         <div class="next">9/9</div>
         <div class="question">태양에 노출된 부분에 다크 스팟이 생기나요?</div>
         <div class="answer">
@@ -150,7 +154,8 @@
         </div>
         <br>
     </div>
-
+   </div> 
+     </div>
 
     <script>
         var answers = <%-JSON.stringify(list)-%>;

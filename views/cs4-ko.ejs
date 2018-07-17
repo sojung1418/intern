@@ -6,7 +6,8 @@
     test</title>
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+ 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
   <script type= 'text/javascript' src= '/javascripts/script.js'></script>
@@ -21,9 +22,10 @@
   <br>
   <br>
   <div class="category-text" value = "cs4">당신의 성향을 알려주세요.</div>
-<div  class="swiper-container">
+    <div  class="swiper-container">
 <div class="swiper-wrapper">
-<div  class ="swiper-slide" id = "q8">
+
+<div class="swiper-slide"id = "q8">
 <div class = "next">1/4</div>
 <div class="question">일주일에 화장을 얼마나 자주 하시나요?</div><br>
 <table class="answer">
@@ -43,12 +45,9 @@
 </tr>
 </table>
 </div>
+   
 
-      
-
-
-
-    <div class="swiper-wrapper" id = "q9">
+    <div class="swiper-slide"id = "q9">
     <div class = "next">2/4</div>
       <div class="question">외모가 얼마나 중요하나요?</div>
       <table class="answer">
@@ -70,7 +69,8 @@
       </div>
 
 
-  <div class="swiper-wrapper" id="q10">
+
+  <div class="swiper-slide"id="q10">
     <div class="next">3/4</div>
     <div class="question">자신의 피부 장점을 적어주세요.(중복선택 가능)</div>
     <div class="answer">
@@ -87,10 +87,13 @@
     <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a22">없다</button>
       <br>
     </div>
-     </div>
+    <br>
+  </div>
 
 
-  <div class= "swiper-wrapper" id="q11">
+
+
+  <div class="swiper-slide" id="q11">
     <div class="next">4/4</div>
     <div class="question">자신의 피부 단점을 적어주세요.(중복선택 가능)</div>
 
@@ -112,12 +115,11 @@
     <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a30">단점이 없는 완벽한 피부!</button>
       <br>
     </div>
-       </div>
-
-
   </div>
 
-  </div>
+   </div> 
+     </div>
+
  <script>
   
     var answers =  <%-JSON.stringify(list)-%> ;
