@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
   //initialize swiper when document ready
-  var mySwiper = new Swiper ('.swiper-container');
+  var swiper = new Swiper ('.swiper-container');
 
   console.log("readyjs");
   var image = [
