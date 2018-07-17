@@ -7,7 +7,7 @@
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type= 'text/javascript' src= '/javascripts/script.js'></script> <script type= 'text/javascript' src= '/javascripts/SwipeView.js'></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
 
  
 </head>
@@ -19,402 +19,347 @@
     <div class= "finish" >Completed</div>
     <br><br>
   <div class="category-text" value = "cs6">Let us know about your preference</div>
-    <div id="wrapper"></div>
- 
-</body>
-<script>
- $(document).ready(function(){
-  
-  console.log("ready");
 
-  var	carousel,
-	el,
-	i,
-	page,
-	slides = [
-
-'<div id="q15">'
-+'<div class="next">1/17</div>'
-+'<div class="question">I’ve never used cosmetic brands that conduct animal test.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a47">Never use it!</button>'
-+'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a48">Avoid as much as possible</button>'
-+'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a49">Don’t care</button>'
-+'</div>'
-+'</div>'
-,
+  <div id="q15">
+    <div class="next">1/17</div>
+    <div class="question">I’ve never used cosmetic brands that conduct animal test.</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a47">Never use it!</button>
+      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a48">Avoid as much as possible</button>
+      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a49">Don’t care</button>
+    </div>
+  </div>
 
 
 
-'<div id="q16">'
-+'<div class="next">2/17</div>'
-+'<div class="question">Select packages that you don’t like</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a50">'
-+'Fancy package</button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a51">'
-+'Simple package</button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a52">'
-+'character package</button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a53">'
-+'Toy-like or kitsch</button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a54">'
-+"I don't care about design</button>"
-+'</div>'
-+'</div>'
-,
+  <div id="q16">
+    <div class="next">2/17</div>
+    <div class="question">Select packages that you don’t like</div>
+    <div class="answer">
+        
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a50">
+            Fancy package</button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a51">
+            Simple package</button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a52">
+            character package</button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a53">
+            Toy-like or kitsch</button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a54">
+            I don't care about design</button>
+    </div>
+  </div>
 
-'<div id="q17">'
-+'<div class="next">3/17</div>'
-+'<div class="question">Select skincare products that you don’t want to use.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a55">'
-+'Toner</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a56">'
-+'Lotion</button>'
-+'<label class="container" name="q17_btns">'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a57">'
-+'Serum</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a58">'
-+'Essence</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a59">'
-+'Oil</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a60">'
-+'All-in-one</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a61">'
-+'Cream</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a62">'
-+'None</button>'
-+'</div>'
-+'</div>'
-,
+  <div id="q17">
+    <div class="next">3/17</div>
+    <div class="question">Select skincare products that you don’t want to use.</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a55">
+            Toner</button>
+      <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a56">
+            Lotion</button>
+      <label class="container" name="q17_btns">
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a57">
+                Serum</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a58">
+                Essence</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a59">
+                Oil</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a60">
+         All-in-one</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a61">
+         Cream</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a62">
+          None</button>
+    </div>
+  </div>
 
-'<div id="q18">'
-+'<div class="next">4/17</div>'
-+'<div class="question">Select the mask pack products that you don’t want to use.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a63">'
-+'Sheet pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a64">'
-+'Wash off pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a65">'
-+'Peel off pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a66">'
-+'Organic pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a67">'
-+'Night pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a68">'
-+'Lifting pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a69">'
-+'Modeling mask pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a70">'
-+'Nose pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a71">'
-+'Plaster mask pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a72">'
-+'Tissue off pack</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a73">'
-+'None</button>'
-+'</div>'
-+'</div>'
-,
+  <div id="q18">
+    <div class="next">4/17</div>
+    <div class="question">Select the mask pack products that you don’t want to use.</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a63">
+            Sheet pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a64">
+            Wash off pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a65">
+            Peel off pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a66">
+            Organic pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a67">
+            Night pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a68">
+            Lifting pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a69">
+            Modeling mask pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a70">
+            Nose pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a71">
+            Plaster mask pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a72">
+            Tissue off pack</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a73">
+            None</button>
+    </div>
 
-'<div id="q19">'
-+'<div class="next">5/17</div>'
-+'<div class="question">Select the cleansing products that you don’t want to use.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a74">'
-+'Cleansing gel </button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a75">'
-+'Cleansing oil</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a76">'
-+'Cleansing water</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a77">'
-+'Cleansing foam</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a78">'
-+'Cleansing tissue</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a79">'
-+'Cleansing balm</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a80">'
-+'Cleansing soap</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a81">'
-+'Remover for lip and eyes</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a82">'
-+'None </button>'
-+'</div>'
-+'</div>'
-,
+    <div id="q19">
+      <div class="next">5/17</div>
+      <div class="question">Select the cleansing products that you don’t want to use.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a74">
+                Cleansing gel </button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a75">
+                Cleansing oil</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a76">
+                Cleansing water</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a77">
+                Cleansing foam</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a78">
+                Cleansing tissue</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a79">
+                Cleansing balm</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a80">
+                Cleansing soap</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a81">
+                Remover for lip and eyes</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a82">
+          None </button>
+      </div>
+    </div>
 
-'<div id="q20">'
-+'<div class="next">6/17</div>'
-+'<div class="question">Select the sun care products that you don’t want to use.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a83">'
-+'Sunscreen</button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a84">'
-+'Sun stick</button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a85">'
-+'Sun lotion </button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a86">'
-+'Sun spray </button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a87">'
-+'Sun gel</button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a88">'
-+'Sun milk</button>'
-+'</div>'
-+'</div>'
-,
+    <div id="q20">
+      <div class="next">6/17</div>
+      <div class="question">Select the sun care products that you don’t want to use.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a83">
+          Sunscreen</button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a84">
+          Sun stick</button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a85">
+          Sun lotion </button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a86">
+          Sun spray </button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a87">
+          Sun gel</button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a88">
+          Sun milk</button>
+      </div>
 
-'<div id="q21">'
-+'<div class="next">7/17</div>'
-+'<div class="question">Select the exfoliants that you don’t want to use.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a89">'
-+'Scrub type (with fine particles) </button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a90">'
-+'Peeling gel type (gommage or gel type, when it scrubbed, dead skin cells are peeled off)</button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a91">'
-+'Enzyme type (Powder type, make bubbles when it is mixed with water)</button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a92">'
-+'Essence type (AHA or BHA is contained) </button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a93">'
-+'None</button>'
-+'</div>'
-+'</div>'
-,
+    </div>
 
-'<div id="q22">'
-+'<div class="next">8/17</div>'
-+'<div class="question">What kind of packages you don’t want to use?</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a94">'
-+'Pump </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a95">'
-+'Tube </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a96">'
-+'Stick </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a97">'
-+'Spoid </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a98">'
-+'Bottle </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a99">'
-+'Cream container</button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a100">'
-+'Spray</button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a101">'
-+'Mist spray</button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a102">'
-+'Compact </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a103">'
-+'None </button>'
-+''
-+'</div>'
-+'</div>'
-,
+    <div id="q21">
+      <div class="next">7/17</div>
+      <div class="question">Select the exfoliants that you don’t want to use.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a89">
+                Scrub type (with fine particles) </button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a90">
+                Peeling gel type (gommage or gel type, when it scrubbed, dead skin cells are peeled off)</button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a91">
+                Enzyme type (Powder type, make bubbles when it is mixed with water)</button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a92">
+                Essence type (AHA or BHA is contained) </button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a93">
+          None</button>
+      </div>
+    </div>
 
-'<div id="q23">'
-+'<div class="next">9/17</div>'
-+'<div class="question"> Are there any ingredients that you want to avoid?</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a104">'
-+'Write in the Etc. section if you have any elements that may cause allergies like flowers, (chamomile etc.) aloe, except for 20 trouble induction components. </button>'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a105">'
-+'20 cautious ingredients </button>'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a106">'
-+'None</button>'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a107">'
-+'Etc. </button>'
-+'</div>'
-+'</div>'
-,
+    <div id="q22">
+      <div class="next">8/17</div>
+      <div class="question">What kind of packages you don’t want to use?</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a94">
+          Pump </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a95">
+        Tube </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a96">
+          Stick </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a97">
+          Spoid </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a98">
+         Bottle </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a99">
+          Cream container</button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a100">
+          Spray</button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a101">
+          Mist spray</button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a102">
+        Compact </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a103">
+        None </button>
 
-'<div id="q24">'
-+'<div class="next">10/17</div>'
-+'<div class="question">Select the fragrances that you don’t like.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a108">'
-+'No fragrance</button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a109">'
-+'Citrus </button>'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a110">'
-+'Floral</button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a111">'
-+'Musk</button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a112">'
-+'Soap</button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a113">'
-+'Herbal (tea tree, rosemary and etc.) </button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a114">'
-+'Powdery</button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a115">'
-+'Ointment fragrance </button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a116">'
-+'None </button>'
-+'</div>'
-+'</div>'
-,
+      </div>
+    </div>
 
-'<div id="q25">'
-+'<div class="next">11/17</div>'
-+'<div class="question">Select the textures that you don’t like.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a117">'
-+'Balm type</button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a118">'
-+'Ointmment type</button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a119">'
-+'Cream type</button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a120">'
-+'Gel type</button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a121">'
-+'Lotion,essence type </button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a122">'
-+'Water,oil type(Liquid type) </button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a123">'
-+'None </button>'
-+'</div>'
-+'</div>'
-,
+    <div id="q23">
+      <div class="next">9/17</div>
+      <div class="question"> Are there any ingredients that you want to avoid?</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a104">
+                Write in the Etc. section if you have any elements that may cause allergies like flowers, (chamomile etc.) aloe, except for 20 trouble induction components. </button>
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a105">
+                20 cautious ingredients </button>
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a106">
+         None</button>
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a107">
+         Etc. </button>
+      
+      </div>
+    </div>
+
+    <div id="q24">
+      <div class="next">10/17</div>
+      <div class="question">Select the fragrances that you don’t like.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a108">
+                No fragrance</button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a109">
+         Citrus </button>
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a110">
+         Floral</button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a111">
+          Musk</button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a112">
+         Soap</button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a113">
+                Herbal (tea tree, rosemary and etc.) </button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a114">
+          Powdery</button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a115">
+                Ointment fragrance </button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a116">
+          None </button>
+
+      </div>
+    </div>
+
+    <div id="q25">
+      <div class="next">11/17</div>
+      <div class="question">Select the textures that you don’t like.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a117">
+                Balm type</button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a118">
+         Ointmment type</button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a119">
+          Cream type</button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a120">
+          Gel type</button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a121">
+          Lotion,essence type </button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a122">
+          Water,oil type(Liquid type) </button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a123">
+          None </button>
+      </div>
+    </div>
 
 
 
-'<div id="q26">'
-+'<div class="next">12/17</div>'
-+'<div class="question">Select the level of viscosity that you don’t like.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a124">'
-+'Very watery</button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a125">'
-+'Little bit watery </button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a126">'
-+'Normal, soft'
-+'</button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a127">'
-+'Chewy </button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a128">'
-+'Thick </button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a129">'
-+"Don't care</button>"
-+'</div>'
-+'</div>'
-,
+    <div id="q26">
+      <div class="next">12/17</div>
+      <div class="question">Select the level of viscosity that you don’t like.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a124">
+                Very watery</button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a125">
+                Little bit watery </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a126">
+                Normal, soft
+        </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a127">
+                Chewy </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a128">
+                Thick </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a129">
+          Don't care</button>
 
-'<div id="q27">'
-+'<div class="next">13/17</div>'
-+'<div class="question">Select the feeling that you don’t like.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a130">'
-+'Cloudiness </button>'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a131">'
-+'Sticky </button>'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a132">'
-+'Cooling</button>'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a133">'
-+"Don't care </button>"
-+'</div>'
-+'</div>'
-,
+      </div>
+    </div>
 
-'<div id="q28">'
-+'<div class="next">14/17</div>'
-+'<div class="question">Select the finishes that you don’t like after skincare.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a134">'
-+'Very light </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a135">'
-+'Light and fresh </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a136">'
-+'Normal</button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a137">'
-+'Heavy and thick </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a138">'
-+'Very heavy and coated</button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a139">'
-+'Don’t care </button>'
-+'</div>'
-+'</div>'
-,
 
-'<div id="q29">'
-+'<div class="next">15/17</div>'
-+'<div class="question">Select the finishes that you don’t like after cleansing.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a140">'
-+'Very moisture and oily</button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a141">'
-+'Moisture </button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a142">'
-+'Normal </button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a143">'
-+'Very soft and smooth </button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a144">'
-+"Don't care</button>"
-+''
-+'</div>'
-+'</div>'
-,
+    <div id="q27">
+      <div class="next">13/17</div>
+      <div class="question">Select the feeling that you don’t like.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a130">
+          Cloudiness </button>
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a131">
+         Sticky </button>
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a132">
+         Cooling</button>
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a133">
+         Don't care </button>
+      </div>
+    </div>
 
-'<div id="q30">'
-+'<div class="next">16/17</div>'
-+'<div class="question">Which one do you prefer between physical and chemical sunscreen?</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a145">'
-+'Physical sunscreen </button>'
-+'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a146">'
-+'Chemical sunscreen </button>'
-+'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a147">'
-+'Don’t care</button>'
-+''
-+'</div>'
-+'</div>'
-,
+    <div id="q28">
+      <div class="next">14/17</div>
+      <div class="question">Select the finishes that you don’t like after skincare.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a134">
+                Very light </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a135">
+                Light and fresh </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a136">
+                Normal</button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a137">
+                Heavy and thick </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a138">
+                Very heavy and coated</button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a139">
+                Don’t care </button>
+      </div>
+    </div>
 
-'<div id="q31">'
-+'<div class="next">17/17</div>'
-+'<div class="question">Which level of blocking do you prefer in sunscreen?</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a148">'
-+'SPF 40 or over</button>'
-+'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a149">'
-+'Lower than SPF 40 </button>'
-+'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a150">'
-+'Don’t care </button>'
-+'</div>'
-+'</div>'
-   ];
+    <div id="q29">
+      <div class="next">15/17</div>
+      <div class="question">Select the finishes that you don’t like after cleansing.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a140">
+                Very moisture and oily</button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a141">
+        Moisture </button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a142">
+          Normal </button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a143">
+                Very soft and smooth </button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a144">
+         Don't care</button>
 
-  carousel = new SwipeView('#wrapper', {
-    numberOfPages: slides.length,
-    hastyPageFlip: true
-  });
+      </div>
+    </div>
+    <div id="q30">
+      <div class="next">16/17</div>
+      <div class="question">Which one do you prefer between physical and chemical sunscreen?</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a145">
+                Physical sunscreen </button>
+        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a146">
+                Chemical sunscreen </button>
+        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a147">
+                Don’t care</button>
 
-  for (i=0; i<3; i++) {
-    page = i==0 ? slides.length-1 : i-1;
-  
-    el = document.createElement('span');
-    el.innerHTML = slides[page];
-    alert(slides[page]);
-    carousel.masterPages[i].appendChild(el)
-  }
-
-carousel.onFlip(function () {
-	var el,
-		upcoming,
-		i;
-
-	for (i=0; i<3; i++) {
-		upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
-
-		if (upcoming != carousel.masterPages[i].dataset.pageIndex) {
-			el = carousel.masterPages[i].querySelector('span');
-			el.innerHTML = slides[upcoming];
-		}
-	}
-  });
+      </div>
+    </div>
+    <div id="q31">
+      <div class="next">17/17</div>
+      <div class="question">Which level of blocking do you prefer in sunscreen?</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a148">
+                SPF 40 or over</button>
+        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a149">
+                Lower than SPF 40 </button>
+        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a150">
+                Don’t care </button>
+      </div>
+    </div>
+    <script>
 
     
       var answers =  <%-JSON.stringify(list)-%> ;
 
     </script>
-
+</body>
 </html>

@@ -7,7 +7,7 @@
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type= 'text/javascript' src= '/javascripts/script.js'></script> <script type= 'text/javascript' src= '/javascripts/SwipeView.js'></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
 
 </head>
 
@@ -18,407 +18,347 @@
     <div class="finish">완료</div>
     <br><br>
   <div class="category-text" value = "cs6">당신의 취향을 알려주세요.</div>
-    <div id="wrapper"></div>
- 
-</body>
-<script>
- $(document).ready(function(){
+
+  <div id="q15">
+    <div class="next">1/17</div>
+    <div class="question">나는 동물 실험을 하는 브랜드의 화장품은 절대 쓰지 않는다.</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a47">절대 안 써요!</button>
+      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a48">가급적 안 쓰려고 노력해요</button>
+      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a49">상관없어요</button>
+    </div>
+  </div>
+
+
+
+  <div id="q16">
+    <div class="next">2/17</div>
+    <div class="question">좋아하지 않는 패키지 디자인을 모두 선택하세요.</div>
+    <div class="answer">
+        
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a50">
+        화려한 패키지</button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a51">
+        단순, 심플한 패키지</button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a52">
+        캐릭터가 그려진 패키지 </button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a53">
+        장난감 같거나 키치한</button>
+      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a54">
+        디자인은 신경쓰지 않아요 </button>
+    </div>
+  </div>
+
+  <div id="q17">
+    <div class="next">3/17</div>
+    <div class="question">피하고 싶은 스킨 케어 제품군을 모두 선택하세요.</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a55">
+        화장수(스킨/토너) </button>
+      <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a56">
+        로션 </button>
+      <label class="container" name="q17_btns">
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a57">
+          세럼</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a58">
+          에센스</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a59">
+          오일 </button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a60">
+          올인원</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a61">
+          크림</button>
+        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a62">
+          딱히 없어요</button>
+    </div>
+  </div>
+
+  <div id="q18">
+    <div class="next">4/17</div>
+    <div class="question">피하고 싶은 팩 제품군을 모두 선택하세요.</div>
+    <div class="answer">
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a63">
+        시트팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a64">
+        워시-오프 팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a65">
+        필-오프 팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a66">
+        천연 팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a67">
+        나이트 팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a68">
+        리프팅 팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a69">
+        모델링 마스크팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a70">
+        코팩 </button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a71">
+        석고 마스크팩</button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a72">
+        티슈-오프 팩 </button>
+      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a73">
+        딱히 없어요 </button>
+    </div>
+    </div>
+
+    <div id="q19">
+      <div class="next">5/17</div>
+      <div class="question">피하고 싶은 클렌징 제품군을 모두 선택하세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a74">
+          클렌징 젤 </button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a75">
+          클렌징 오일</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a76">
+          클렌징 워터 </button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a77">
+          클렌징 폼 </button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a78">
+          클렌징 티슈 </button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a79">
+          클렌징 밤 </button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a80">
+          클렌징 비누 </button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a81">
+          포인트 메이크업 리무버(립앤아이)</button>
+        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a82">
+          딱히 없어요 </button>
+      </div>
+    </div>
+
+    <div id="q20">
+      <div class="next">6/17</div>
+      <div class="question">피하고 싶은 선케어 제품군을 모두 선택하세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a83">
+          선크림</button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a84">
+          선스틱</button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a85">
+          선로션 </button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a86">
+          선스프레이 </button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a87">
+          선젤 </button>
+        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a88">
+          선밀크 </button>
+      </div>
+
+    </div>
+
+    <div id="q21">
+      <div class="next">7/17</div>
+      <div class="question">피하고 싶은 각질 제거 제품군을 모두 선택하세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a89">
+          스크럽 타입(미세한 알갱이가 있는 타입) </button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a90">
+          필링젤 타입(고마쥬 타입, 젤 형태, 문지르면 때처럼 각질이 벗겨짐) </button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a91">
+          효소 타입(가루 형태, 물과 만나 거품을 만듦) </button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a92">
+          에센스 타입(AHA 또는 BHA 성분 함유) </button>
+        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a93">
+          딱히 없어요</button>
+      </div>
+    </div>
+
+    <div id="q22">
+      <div class="next">8/17</div>
+      <div class="question">내용물이 나오는 방식 중 피하고 싶은 것은?</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a94">
+          펌프 </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a95">
+         튜브 </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a96">
+          스틱 </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a97">
+          스포이드 </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a98">
+          스킨병 </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a99">
+          크림병(덜어서 쓰는 방식)</button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a100">
+          스프레이분사 </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a101">
+          안개분사</button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a102">
+          콤팩트 </button>
+        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a103">
+          상관없어요 </button>
+
+      </div>
+    </div>
+
+    <div id="q23">
+      <div class="next">9/17</div>
+      <div class="question">피하고 싶은 성분이 있나요?<br>20가지 트러블 유발 성분 외에 꽃 알레르기 (카모마일 등), 알로에 알레르기 등 특별히 피해야하는 성분이 있다면 기타에 적어주세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a105">
+          20가지 주의성분 </button>
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a106">
+          없음 </button>
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a107">
+          기타 </button>
+       
+      </div>
+    </div>
+
+    <div id="q24">
+      <div class="next">10/17</div>
+      <div class="question">좋아하지 않는 향을 모두 선택해주세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a108">
+          무향 </button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a109">
+          시트러스 </button>
+        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a110">
+          플로럴</button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a111">
+          머스크 </button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a112">
+          비누 </button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a113">
+          허벌(티트리, 로즈마리 등의 허브향) </button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a114">
+          파우더리 </button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a115">
+          약(연고향)</button>
+        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a116">
+          딱히 없어요 </button>
+
+      </div>
+    </div>
+
+    <div id="q25">
+      <div class="next">11/17</div>
+      <div class="question">마음에 들지 않는 텍스쳐 종류를 모두 선택해주세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a117">
+          밤 타입</button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a118">
+          연고 타입 </button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a119">
+          크림 타입</button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a120">
+          젤 타입</button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a121">
+          로션, 에센스 타입 </button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a122">
+          워터, 오일 타입(흐르는 제형) </button>
+        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a123">
+          딱히 없어요 </button>
+      </div>
+    </div>
+
+
+
+    <div id="q26">
+      <div class="next">12/17</div>
+      <div class="question">원치 않는 텍스쳐 점도를 모두 선택하세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a124">
+          아주 묽음</button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a125">
+          약간 묽음 </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a126">
+          보통, 부드러움
+        </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a127">
+          쫀쫀함 </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a128">
+          되직(꾸덕꾸덕) </button>
+        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a129">
+          상관없어요 </button>
+
+      </div>
+    </div>
+
+
+    <div id="q27">
+      <div class="next">13/17</div>
+      <div class="question">제품 사용 시 기피하는 사용감을 모두 선택하세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a130">
+          백탁 </button>
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a131">
+          끈적임 </button>
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a132">
+          쿨링감 </button>
+        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a133">
+          상관없어요 </button>
+      </div>
+    </div>
+
+    <div id="q28">
+      <div class="next">14/17</div>
+      <div class="question">스킨 케어 후 원치 않는 마무리감을 골라주세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a134">
+          아주 가벼운 느낌 </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a135">
+          가볍고 산뜻하게 발린 느낌 </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a136">
+          보통 </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a137">
+          무겁고 두툼하게 발린 느낌 </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a138">
+          아주 무겁고 코팅된 느낌 </button>
+        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a139">
+          상관없어요 </button>
+      </div>
+    </div>
+
+    <div id="q29">
+      <div class="next">15/17</div>
+      <div class="question">클렌징 직후 원치 않는 마무리감을 골라주세요.</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a140">
+          유수분감 많음</button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a141">
+          촉촉함 </button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a142">
+          보통 </button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a143">
+          아주 뽀득뽀득함 </button>
+        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a144">
+          상관없어요</button>
+
+      </div>
+    </div>
+    <div id="q30">
+      <div class="next">16/17</div>
+      <div class="question">자외선 차단제의 무기자차(물리적 차단)와 유기자차(화학적 차단) 중 선호하는 것은?</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a145">
+            무기자차(물리적 차단) </button>
+        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a146">
+            유기자차(화학적 차단) </button>
+        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a147">
+            상관없어요</button>
+
+      </div>
+    </div>
+    <div id="q31">
+      <div class="next">17/17</div>
+      <div class="question">선호하는 자외선 차단제의 차단지수는?</div>
+      <div class="answer">
+        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a148">
+            SPF 40 이상 </button>
+        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a149">
+            SPF 40 미만 </button>
+        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a150">
+            상관없어요 </button>
+      </div>
+    </div>
   
-  console.log("ready");
+    <script>
 
-  var	carousel,
-	el,
-	i,
-	page,
-	slides = [
-'<div id="q15">'
-+'<div class="next">1/17</div>'
-+'<div class="question">나는 동물 실험을 하는 브랜드의 화장품은 절대 쓰지 않는다.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a47">절대 안 써요!</button>'
-+'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a48">가급적 안 쓰려고 노력해요</button>'
-+'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a49">상관없어요</button>'
-+'</div>'
-+'</div>'
-,
-
-
-'<div id="q16">'
-+'<div class="next">2/17</div>'
-+'<div class="question">좋아하지 않는 패키지 디자인을 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a50">'
-+'화려한 패키지</button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a51">'
-+'단순, 심플한 패키지</button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a52">'
-+'캐릭터가 그려진 패키지 </button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a53">'
-+'장난감 같거나 키치한</button>'
-+'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a54">'
-+'디자인은 신경쓰지 않아요 </button>'
-+'</div>'
-+'</div>'
-,
-
-'<div id="q17">'
-+'<div class="next">3/17</div>'
-+'<div class="question">피하고 싶은 스킨 케어 제품군을 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a55">'
-+'화장수(스킨/토너) </button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a56">'
-+'로션 </button>'
-+'<label class="container" name="q17_btns">'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a57">'
-+'세럼</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a58">'
-+'에센스</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a59">'
-+'오일 </button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a60">'
-+'올인원</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a61">'
-+'크림</button>'
-+'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a62">'
-+'딱히 없어요</button>'
-+'</div>'
-+'</div>'
-,
-
-'<div id="q18">'
-+'<div class="next">4/17</div>'
-+'<div class="question">피하고 싶은 팩 제품군을 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a63">'
-+'시트팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a64">'
-+'워시-오프 팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a65">'
-+'필-오프 팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a66">'
-+'천연 팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a67">'
-+'나이트 팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a68">'
-+'리프팅 팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a69">'
-+'모델링 마스크팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a70">'
-+'코팩 </button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a71">'
-+'석고 마스크팩</button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a72">'
-+'티슈-오프 팩 </button>'
-+'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a73">'
-+'딱히 없어요 </button>'
-+'</div>'
-+'</div>'
-,
-
-'<div id="q19">'
-+'<div class="next">5/17</div>'
-+'<div class="question">피하고 싶은 클렌징 제품군을 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a74">'
-+'클렌징 젤 </button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a75">'
-+'클렌징 오일</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a76">'
-+'클렌징 워터 </button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a77">'
-+'클렌징 폼 </button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a78">'
-+'클렌징 티슈 </button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a79">'
-+'클렌징 밤 </button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a80">'
-+'클렌징 비누 </button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a81">'
-+'포인트 메이크업 리무버(립앤아이)</button>'
-+'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a82">'
-+'딱히 없어요 </button>'
-+'</div>'
-+'</div>'
-,
-
-'<div id="q20">'
-+'<div class="next">6/17</div>'
-+'<div class="question">피하고 싶은 선케어 제품군을 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a83">'
-+'선크림</button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a84">'
-+'선스틱</button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a85">'
-+'선로션 </button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a86">'
-+'선스프레이 </button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a87">'
-+'선젤 </button>'
-+'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a88">'
-+'선밀크 </button>'
-+'</div>'
-+''
-+'</div>'
-,
-
-'<div id="q21">'
-+'<div class="next">7/17</div>'
-+'<div class="question">피하고 싶은 각질 제거 제품군을 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a89">'
-+'스크럽 타입(미세한 알갱이가 있는 타입) </button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a90">'
-+'필링젤 타입(고마쥬 타입, 젤 형태, 문지르면 때처럼 각질이 벗겨짐) </button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a91">'
-+'효소 타입(가루 형태, 물과 만나 거품을 만듦) </button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a92">'
-+'에센스 타입(AHA 또는 BHA 성분 함유) </button>'
-+'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a93">'
-+'딱히 없어요</button>'
-+'</div>'
-+'</div>'
-,
-
-'<div id="q22">'
-+'<div class="next">8/17</div>'
-+'<div class="question">내용물이 나오는 방식 중 피하고 싶은 것은?</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a94">'
-+'펌프 </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a95">'
-+'튜브 </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a96">'
-+'스틱 </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a97">'
-+'스포이드 </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a98">'
-+'스킨병 </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a99">'
-+'크림병(덜어서 쓰는 방식)</button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a100">'
-+'스프레이분사 </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a101">'
-+'안개분사</button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a102">'
-+'콤팩트 </button>'
-+'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a103">'
-+'상관없어요 </button>'
-+''
-+'</div>'
-+'</div>'
-,
-
-'<div id="q23">'
-+'<div class="next">9/17</div>'
-+'<div class="question">피하고 싶은 성분이 있나요?<br>20가지 트러블 유발 성분 외에 꽃 알레르기 (카모마일 등), 알로에 알레르기 등 특별히 피해야하는 성분이 있다면 기타에 적어주세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a105">'
-+'20가지 주의성분 </button>'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a106">'
-+'없음 </button>'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a107">'
-+'기타 </button>'
-+''
-+'</div>'
-+'</div>'
-,
-
-'<div id="q24">'
-+'<div class="next">10/17</div>'
-+'<div class="question">좋아하지 않는 향을 모두 선택해주세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a108">'
-+'무향 </button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a109">'
-+'시트러스 </button>'
-+'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a110">'
-+'플로럴</button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a111">'
-+'머스크 </button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a112">'
-+'비누 </button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a113">'
-+'허벌(티트리, 로즈마리 등의 허브향) </button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a114">'
-+'파우더리 </button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a115">'
-+'약(연고향)</button>'
-+'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a116">'
-+'딱히 없어요 </button>'
-+''
-+'</div>'
-+'</div>'
-,
-
-'<div id="q25">'
-+'<div class="next">11/17</div>'
-+'<div class="question">마음에 들지 않는 텍스쳐 종류를 모두 선택해주세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a117">'
-+'밤 타입</button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a118">'
-+'연고 타입 </button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a119">'
-+'크림 타입</button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a120">'
-+'젤 타입</button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a121">'
-+'로션, 에센스 타입 </button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a122">'
-+'워터, 오일 타입(흐르는 제형) </button>'
-+'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a123">'
-+'딱히 없어요 </button>'
-+'</div>'
-+'</div>'
-,
-
-
-'<div id="q26">'
-+'<div class="next">12/17</div>'
-+'<div class="question">원치 않는 텍스쳐 점도를 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a124">'
-+'아주 묽음</button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a125">'
-+'약간 묽음 </button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a126">'
-+'보통, 부드러움'
-+'</button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a127">'
-+'쫀쫀함 </button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a128">'
-+'되직(꾸덕꾸덕) </button>'
-+'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a129">'
-+'상관없어요 </button>'
-+''
-+'</div>'
-+'</div>'
-,
-
-'<div id="q27">'
-+'<div class="next">13/17</div>'
-+'<div class="question">제품 사용 시 기피하는 사용감을 모두 선택하세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a130">'
-+'백탁 </button>'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a131">'
-+'끈적임 </button>'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a132">'
-+'쿨링감 </button>'
-+'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a133">'
-+'상관없어요 </button>'
-+'</div>'
-+'</div>'
-,
-
-'<div id="q28">'
-+'<div class="next">14/17</div>'
-+'<div class="question">스킨 케어 후 원치 않는 마무리감을 골라주세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a134">'
-+'아주 가벼운 느낌 </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a135">'
-+'가볍고 산뜻하게 발린 느낌 </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a136">'
-+'보통 </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a137">'
-+'무겁고 두툼하게 발린 느낌 </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a138">'
-+'아주 무겁고 코팅된 느낌 </button>'
-+'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a139">'
-+'상관없어요 </button>'
-+'</div>'
-+'</div>'
-,
-
-
-'<div id="q29">'
-+'<div class="next">15/17</div>'
-+'<div class="question">클렌징 직후 원치 않는 마무리감을 골라주세요.</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a140">'
-+'유수분감 많음</button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a141">'
-+'촉촉함 </button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a142">'
-+'보통 </button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a143">'
-+'아주 뽀득뽀득함 </button>'
-+'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a144">'
-+'상관없어요</button>'
-+''
-+'</div>'
-+'</div>'
-,
-
-'<div id="q30">'
-+'<div class="next">16/17</div>'
-+'<div class="question">자외선 차단제의 무기자차(물리적 차단)와 유기자차(화학적 차단) 중 선호하는 것은?</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a145">'
-+'무기자차(물리적 차단) </button>'
-+'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a146">'
-+'유기자차(화학적 차단) </button>'
-+'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a147">'
-+'상관없어요</button>'
-+''
-+'</div>'
-+'</div>'
-,
-
-'<div id="q31">'
-+'<div class="next">17/17</div>'
-+'<div class="question">선호하는 자외선 차단제의 차단지수는?</div>'
-+'<div class="answer">'
-+'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a148">'
-+'SPF 40 이상 </button>'
-+'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a149">'
-+'SPF 40 미만 </button>'
-+'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a150">'
-+'상관없어요 </button>'
-+'</div>'
-+'</div>'
-  
-   ];
-
-  carousel = new SwipeView('#wrapper', {
-    numberOfPages: slides.length,
-    hastyPageFlip: true
-  });
-
-  for (i=0; i<3; i++) {
-    page = i==0 ? slides.length-1 : i-1;
-  
-    el = document.createElement('span');
-    el.innerHTML = slides[page];
-    alert(slides[page]);
-    carousel.masterPages[i].appendChild(el)
-  }
-
-carousel.onFlip(function () {
-	var el,
-		upcoming,
-		i;
-
-	for (i=0; i<3; i++) {
-		upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
-
-		if (upcoming != carousel.masterPages[i].dataset.pageIndex) {
-			el = carousel.masterPages[i].querySelector('span');
-			el.innerHTML = slides[upcoming];
-		}
-	}
-  });
-    });
     
-  
       var answers =  <%-JSON.stringify(list)-%> ;
-    
+
     </script>
-
-    
-    
-
+</body>
 </html>
