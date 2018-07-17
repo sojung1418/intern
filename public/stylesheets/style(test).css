@@ -58,6 +58,21 @@ font: 12px;
   font-family: 'NotoSansCJKkr-Bold';
 
 }
+.button_image_normal{
+  
+  
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #f2f2f2;
+  
+  margin-right: 12px;
+  width: 92px;
+  height: 56px;
+  opacity: 1;
+  transition: 0.3s;
+  border-radius: 8px;
+
+}
 /*cs1 상품 이미지버튼 */
 .button_cosmetic_normal{
  
@@ -88,7 +103,7 @@ margin-top: 31px;
   border-radius: 50%;
 }
 /*cs1,cs2 이미지버튼 클릭 후*/
-.button_brand_cosmetic_normal_checked{
+.button_brand_cosmetic_normal_checked , .button_image_normal_checked{
   opacity:0.35;
   background-color: #f86f9c;
  
