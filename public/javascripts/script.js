@@ -283,13 +283,22 @@ $(document).ready(function () {
       } else {
         $(this).data("data-checked", "check");
       }
-    
+      var strval = "";
+      q.each(function () {
+        if ($(this).data("data-checked") == "check") {
+
+          strval += $(this).val();
+          strval += "/";
+        } else {
+          strval = strval.replace($(this).val() + '/', "");
+        }
+       });
       survey.userid = q.data("userid");
       survey.cid = q.data("cid");
       survey.csid = q.data("csid");
       survey.qid = qid;
       survey.answerType = "image";
-      survey.answer = $(this).val();
+      survey.answer =strval;
       setSurvey(survey);
     });
 
