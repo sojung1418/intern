@@ -8,7 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script> 
+  <script type= 'text/javascript' src= '/javascripts/SwipeView.js'></script>
 
   
 </head>
@@ -20,97 +21,136 @@
   <br>
   <br>
   <div class="category-text" value = "cs4">請告訴我們您的傾向。</div>
-  <div id = "q8">
-    <div class = "next">1/4</div>
-        <div class="question">一周化幾次妝?</div><br>
-      <table class="answer">
-      <tr>
-        <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="1"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="2"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="3"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="4"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="5"></td>
-      </tr>
-      <tr>
-        <td><div class="desc-text">完全不會</div></td>
-        <td><div class="desc-text"></div></td>
-        <td><div class="desc-text"></div></td>
-        <td><div class="desc-text"></div></td>
-        <td><div class="desc-text">每天</div></td>
-      </tr>
-      </table>
-      </div>
-      
-     <br>
-    
-    <div id = "q9">
-    <div class = "next">2/4</div>
-      <div class="question">外表對您有多重要?</div>
-      <table class="answer">
-      <tr>
-        <td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="1"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="2"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="3"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="4"></td>
-        <td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="5"></td>
-      </tr>
-      <tr>
-        <td><div class="desc-text">不重要</div></td>
-        <td><div class="desc-text"></div></td>
-        <td><div class="desc-text"></div></td>
-        <td><div class="desc-text"></div></td>
-        <td><div class="desc-text">重要</div></td>
-      </tr>
-      </table>
-      </div>
+ 
+ <script>
+ $(document).ready(function(){
+  
+  console.log("ready");
+
+  var	carousel,
+	el,
+	i,
+	page,
+	slides = [
+'<div id = "q8">'
++'<div class = "next">1/4</div>'
++'<div class="question">一周化幾次妝?</div><br>'
++'<table class="answer">'
++'<tr>'
++'<td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="1"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="2"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="3"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="4"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q8_btns" value="5"></td>'
++'</tr>'
++'<tr>'
++'<td><div class="desc-text">完全不會</div></td>'
++'<td><div class="desc-text"></div></td>'
++'<td><div class="desc-text"></div></td>'
++'<td><div class="desc-text"></div></td>'
++'<td><div class="desc-text">每天</div></td>'
++'</tr>'
++'</table>'
++'</div>'
+,
 
 
-  <div id="q10">
-    <div class="next">3/4</div>
-    <div class="question">您的肌膚優點是？</div>
-    <div class="answer">
-    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a17">無任何雜質的幹凈肌膚</button>
-    <br>
-    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a18">無皺紋的童顏肌膚</button>
-    <br>
-    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a19">幾乎沒有毛孔、斑痕 </button>
-    <br>
-    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a20">不敏感</button>
-    <br>
-    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a21">亮白膚色</button>
-    <br>
-    <button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a22">没有</button>
-      <br>
-    </div>
-    <br>
-  </div>
+'<div id = "q9">'
++'<div class = "next">2/4</div>'
++'<div class="question">外表對您有多重要?</div>'
++'<table class="answer">'
++'<tr>'
++'<td><input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="1"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="2"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="3"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="4"></td>'
++'<td> <input class="button_normal "data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" type="button" name="q9_btns" value="5"></td>'
++'</tr>'
++'<tr>'
++'<td><div class="desc-text">不重要</div></td>'
++'<td><div class="desc-text"></div></td>'
++'<td><div class="desc-text"></div></td>'
++'<td><div class="desc-text"></div></td>'
++'<td><div class="desc-text">重要</div></td>'
++'</tr>'
++'</table>'
++'</div>'
+,
+
+'<div id="q10">'
++'<div class="next">3/4</div>'
++'<div class="question">您的肌膚優點是？</div>'
++'<div class="answer">'
++'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a17">無任何雜質的幹凈肌膚</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a18">無皺紋的童顏肌膚</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a19">幾乎沒有毛孔、斑痕 </button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a20">不敏感</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a21">亮白膚色</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q10_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a22">没有</button>'
++'<br>'
++'</div>'
++'<br>'
++'</div>'
+,
 
 
+'<div id="q11">'
++'<div class="next">4/4</div>'
++'<div class="question">您的肌膚缺點是？</div>'
++'<div class="answer">'
++'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a23">容易長痘</button>'
++'<br>'
++'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a24">毛孔大</button>'
++'<br>'
++'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a25">피油脂分泌/出油較多</button>'
++'<br>'
++'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a26">護膚也免不了皮膚乾</button>'
++'<br>'
++'<button class="button_test_normal"  data-checked="check"name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a27">經常脫皮、膚質粗糙、不容易上妝</button>'
++'<br>'
++'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a28">敏感</button>'
++'<br>'
++'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a29">黑眼圈較多，膚色暗淡</button>'
++'<br>'
++'<button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a30">零缺點的完美肌膚!</button>'
++'<br>'
++'</div>'
++'</div>'
+];
 
-  <div id="q11">
-    <div class="next">4/4</div>
-    <div class="question">您的肌膚缺點是？</div>
+  carousel = new SwipeView('#wrapper', {
+    numberOfPages: slides.length,
+    hastyPageFlip: true
+  });
 
-    <div class="answer">
-    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a23">容易長痘</button>
-    <br>
-    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a24">毛孔大</button>
-    <br>
-    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a25">피油脂分泌/出油較多</button>
-    <br>
-    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a26">護膚也免不了皮膚乾</button>
-    <br>
-    <button class="button_test_normal"  data-checked="check"name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a27">經常脫皮、膚質粗糙、不容易上妝</button>
-    <br>
-    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a28">敏感</button>
-    <br>
-    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a29">黑眼圈較多，膚色暗淡</button>
-    <br>
-    <button class="button_test_normal"  data-checked="check" name="q11_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a30">零缺點的完美肌膚!</button>
-      <br>
-    </div>
-  </div>
-  <script>
+  for (i=0; i<3; i++) {
+    page = i==0 ? slides.length-1 : i-1;
+  
+    el = document.createElement('span');
+    el.innerHTML = slides[page];
+    alert(slides[page]);
+    carousel.masterPages[i].appendChild(el)
+  }
+
+carousel.onFlip(function () {
+	var el,
+		upcoming,
+		i;
+
+	for (i=0; i<3; i++) {
+		upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
+
+		if (upcoming != carousel.masterPages[i].dataset.pageIndex) {
+			el = carousel.masterPages[i].querySelector('span');
+			el.innerHTML = slides[upcoming];
+		}
+	}
+  });
 
   
     var answers =  <%-JSON.stringify(list)-%> ;

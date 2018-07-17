@@ -7,7 +7,7 @@
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script> <script type= 'text/javascript' src= '/javascripts/SwipeView.js'></script>
 
 </head>
 
@@ -18,344 +18,398 @@
     <div class= "finish" >完成</div>
     <br><br>
   <div class="category-text" value = "cs6">您的喜好是？</div>
-
-  <div id="q15">
-    <div class="next">1/17</div>
-    <div class="question">我絕不使用動物實驗化妝品.</div>
-    <div class="answer">
-      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a47">永遠不使用</button>
-      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a48">儘量努力不用</button>
-      <button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a49">無所謂</button>
-    </div>
-  </div>
-
-
-
-  <div id="q16">
-    <div class="next">2/17</div>
-    <div class="question">選擇所有不喜歡的外觀設計</div>
-    <div class="answer">
-        
-      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a50">
-        華麗</button>
-      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a51">
-        簡易</button>
-      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a52">
-        卡通形象的外觀 </button>
-      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a53">
-        類似玩具或 可愛</button>
-      <button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a54">
-        我不在乎設計 </button>
-    </div>
-  </div>
-
-  <div id="q17">
-    <div class="next">3/17</div>
-    <div class="question">請選擇所有不喜歡的護膚品種類.</div>
-    <div class="answer">
-      <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a55">
-        化妝水(護膚水/爽膚水) </button>
-      <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a56">
-        乳液 </button>
-      <label class="container" name="q17_btns">
-        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a57">
-          乳清</button>
-        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a58">
-          精華</button>
-        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a59">
-          精油 </button>
-        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a60">
-          綜合型</button>
-        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a61">
-          面霜</button>
-        <button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a62">
-          沒有</button>
-    </div>
-  </div>
-
-  <div id="q18">
-    <div class="next">4/17</div>
-    <div class="question">請選擇所有不喜歡面膜種類。</div>
-    <div class="answer">
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a63">
-        片狀面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a64">
-        水洗面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a65">
-        撕拉式面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a66">
-        天然面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a67">
-        睡眠面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a68">
-        提拉麵膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a69">
-        泥漿面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a70">
-        鼻貼 </button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a71">
-        石膏面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a72">
-        擦拭面膜</button>
-      <button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a73">
-        沒有 </button>
-    </div>
-
-    <div id="q19">
-      <div class="next">5/17</div>
-      <div class="question">請選擇所有不想用的潔面種類。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a74">
-          卸妝膠 </button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a75">
-          卸妝油</button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a76">
-          卸妝水</button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a77">
-          洗面乳 </button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a78">
-          卸妝紙 </button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a79">
-          卸妝膏 </button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a80">
-          洗臉皂 </button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a81">
-          部分卸妝(唇眼卸妝液)</button>
-        <button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a82">
-          沒有</button>
-      </div>
-    </div>
-
-    <div id="q20">
-      <div class="next">6/17</div>
-      <div class="question">請選擇所有不想用的防曬類型.</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a83">
-          防曬霜</button>
-        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a84">
-          防曬膏</button>
-        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a85">
-          防曬液 </button>
-        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a86">
-          防曬噴霧</button>
-        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a87">
-          防曬凝膠 </button>
-        <button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a88">
-          防曬乳 </button>
-      </div>
-
-    </div>
-
-    <div id="q21">
-      <div class="next">7/17</div>
-      <div class="question">請選擇所有不想用的去角質產品。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a89">
-          磨砂膏型(含有小顆粒物) </button>
-        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a90">
-          去角質型(磨砂型、凝膠型、磋灰的感覺)</button>
-        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a91">
-          酵素型(粉狀、遇到水會起泡) </button>
-        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a92">
-          精華型(含AHA或BHA成分) </button>
-        <button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a93">
-          沒有</button>
-      </div>
-    </div>
-
-    <div id="q22">
-      <div class="next">8/17</div>
-      <div class="question">不喜歡的使用方法是？</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a94">
-          壓力漿 </button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a95">
-          管 </button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a96">
-          棒 </button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a97">
-          吸量管 </button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a98">
-          護膚水瓶 </button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a99">
-          面霜瓶(盛出來的方式)</button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a100">
-          噴射 </button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a101">
-          噴霧</button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a102">
-          擠壓 </button>
-        <button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a103">
-          沒有</button>
-
-      </div>
-    </div>
-
-    <div id="q23">
-      <div class="next">9/17</div>
-      <div class="question">不想用的成分是?</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a104">
-          20種皮膚問題誘因外，如有花粉過敏（柑橘茶等）、蘆薈過敏等尤其要避免的成分請寫一下。</button>
-        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a105">
-          20種危險成分 </button>
-        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a106">
-          沒有 </button>
-        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a107">
-          其他 </button>
-   
-      </div>
-    </div>
-
-    <div id="q24">
-      <div class="next">10/17</div>
-      <div class="question">選擇所有不喜歡的香味。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a108">
-          無香 </button>
-        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a109">
-          柳丁味 </button>
-        <button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a110">
-          花香</button>
-        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a111">
-          甜瓜香 </button>
-        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a112">
-          香皂 </button>
-        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a113">
-          草藥茶(茶樹、迷迭香、香草)</button>
-        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a114">
-          粉香 </button>
-        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a115">
-          藥(膏藥香)</button>
-        <button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a116">
-          沒有</button>
-
-      </div>
-    </div>
-
-    <div id="q25">
-      <div class="next">11/17</div>
-      <div class="question">選擇所有不喜歡的質感。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a117">
-          膏罐狀</button>
-        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a118">
-          軟膏條狀 </button>
-        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a119">
-          面霜型</button>
-        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a120">
-          凝膠狀</button>
-        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a121">
-          乳液、乳清型 </button>
-        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a122">
-          水、精油型(液體) </button>
-        <button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a123">
-          沒有 </button>
-      </div>
-    </div>
-
-
-
-    <div id="q26">
-      <div class="next">12/17</div>
-      <div class="question">請選擇所有不喜歡的質感。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a124">
-          非常稀</button>
-        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a125">
-          有點稀 </button>
-        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a126">
-          一般、柔軟
-        </button>
-        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a127">
-          彈性 </button>
-        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a128">
-          稠(黏) </button>
-        <button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a129">
-          沒有 </button>
-
-      </div>
-    </div>
-
-
-    <div id="q27">
-      <div class="next">13/17</div>
-      <div class="question">請選擇所有不喜歡的使用感。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a130">
-          白濁 </button>
-        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a131">
-          黏糊糊 </button>
-        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a132">
-          清爽 </button>
-        <button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a133">
-          沒有 </button>
-      </div>
-    </div>
-
-    <div id="q28">
-      <div class="next">14/17</div>
-      <div class="question">請選擇不喜歡的塗抹感。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a134">
-          非常輕</button>
-        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a135">
-          清爽</button>
-        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a136">
-          普通 </button>
-        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a137">
-          厚重</button>
-        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a138">
-          層次感</button>
-        <button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a139">
-          沒有 </button>
-      </div>
-    </div>
-
-    <div id="q29">
-      <div class="next">15/17</div>
-      <div class="question">請選擇洗臉後不喜歡的感覺。</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a140">
-          油水分均多</button>
-        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a141">
-          水潤 </button>
-        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a142">
-          普通 </button>
-        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a143">
-          非常光滑 </button>
-        <button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a144">
-          沒有</button>
-
-      </div>
-    </div>
-    <div id="q30">
-      <div class="next">16/17</div>
-      <div class="question">物理防曬劑和化學防曬劑中更喜歡哪種？</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a145">
-          物理防曬劑 </button>
-        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a146">
-          化學防曬劑 </button>
-        <button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a147">
-          沒有</button>
-
-      </div>
-    </div>
-    <div id="q31">
-      <div class="next">17/17</div>
-      <div class="question">喜歡的防曬指數是？</div>
-      <div class="answer">
-        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a148">
-          SPF 40以上 </button>
-        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a149">
-            SPF 40以下 </button>
-        <button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a150">
-          沒有</button>
-      </div>
-    </div>
+<script>
+ $(document).ready(function(){
   
-    <script>
+  console.log("ready");
+
+  var	carousel,
+	el,
+	i,
+	page,
+	slides = [
+'<div id="q15">'
++'<div class="next">1/17</div>'
++'<div class="question">我絕不使用動物實驗化妝品.</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a47">永遠不使用</button>'
++'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a48">儘量努力不用</button>'
++'<button class="button_test_normal" name="q15_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a49">無所謂</button>'
++'</div>'
++'</div>'
+,
+
+
+
+'<div id="q16">'
++'<div class="next">2/17</div>'
++'<div class="question">選擇所有不喜歡的外觀設計</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a50">'
++'華麗</button>'
++'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a51">'
++'簡易</button>'
++'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a52">'
++'卡通形象的外觀 </button>'
++'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a53">'
++'類似玩具或 可愛</button>'
++'<button class="button_test_normal" name="q16_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a54">'
++'我不在乎設計 </button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q17">'
++'<div class="next">3/17</div>'
++'<div class="question">請選擇所有不喜歡的護膚品種類.</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a55">'
++'化妝水(護膚水/爽膚水) </button>'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a56">'
++'乳液 </button>'
++'<label class="container" name="q17_btns">'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a57">'
++'乳清</button>'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a58">'
++'精華</button>'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a59">'
++'精油 </button>'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a60">'
++'綜合型</button>'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a61">'
++'面霜</button>'
++'<button class="button_test_normal" name="q17_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a62">'
++'沒有</button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q18">'
++'<div class="next">4/17</div>'
++'<div class="question">請選擇所有不喜歡面膜種類。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a63">'
++'片狀面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a64">'
++'水洗面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a65">'
++'撕拉式面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a66">'
++'天然面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a67">'
++'睡眠面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a68">'
++'提拉麵膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a69">'
++'泥漿面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a70">'
++'鼻貼 </button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a71">'
++'石膏面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a72">'
++'擦拭面膜</button>'
++'<button class="button_test_normal" name="q18_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a73">'
++'沒有 </button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q19">'
++'<div class="next">5/17</div>'
++'<div class="question">請選擇所有不想用的潔面種類。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a74">'
++'卸妝膠 </button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a75">'
++'卸妝油</button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a76">'
++'卸妝水</button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a77">'
++'洗面乳 </button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a78">'
++'卸妝紙 </button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a79">'
++'卸妝膏 </button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a80">'
++'洗臉皂 </button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a81">'
++'部分卸妝(唇眼卸妝液)</button>'
++'<button class="button_test_normal" name="q19_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a82">'
++'沒有</button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q20">'
++'<div class="next">6/17</div>'
++'<div class="question">請選擇所有不想用的防曬類型.</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a83">'
++'防曬霜</button>'
++'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a84">'
++'防曬膏</button>'
++'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a85">'
++'防曬液 </button>'
++'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a86">'
++'防曬噴霧</button>'
++'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a87">'
++'防曬凝膠 </button>'
++'<button class="button_test_normal" name="q20_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a88">'
++'防曬乳 </button>'
++'</div>'
++''
++'</div>'
+,
+
+'<div id="q21">'
++'<div class="next">7/17</div>'
++'<div class="question">請選擇所有不想用的去角質產品。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a89">'
++'磨砂膏型(含有小顆粒物) </button>'
++'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a90">'
++'去角質型(磨砂型、凝膠型、磋灰的感覺)</button>'
++'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a91">'
++'酵素型(粉狀、遇到水會起泡) </button>'
++'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a92">'
++'精華型(含AHA或BHA成分) </button>'
++'<button class="button_test_normal" name="q21_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a93">'
++'沒有</button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q22">'
++'<div class="next">8/17</div>'
++'<div class="question">不喜歡的使用方法是？</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a94">'
++'壓力漿 </button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a95">'
++'管 </button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a96">'
++'棒 </button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a97">'
++'吸量管 </button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a98">'
++'護膚水瓶 </button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a99">'
++'面霜瓶(盛出來的方式)</button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a100">'
++'噴射 </button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a101">'
++'噴霧</button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a102">'
++'擠壓 </button>'
++'<button class="button_test_normal" name="q22_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a103">'
++'沒有</button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q23">'
++'<div class="next">9/17</div>'
++'<div class="question">不想用的成分是?</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a104">'
++'20種皮膚問題誘因外，如有花粉過敏（柑橘茶等）、蘆薈過敏等尤其要避免的成分請寫一下。</button>'
++'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a105">'
++'20種危險成分 </button>'
++'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a106">'
++'沒有 </button>'
++'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a107">'
++'其他 </button>'
++''
++'</div>'
++'</div>'
+,
+
+'<div id="q24">'
++'<div class="next">10/17</div>'
++'<div class="question">選擇所有不喜歡的香味。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a108">'
++'無香 </button>'
++'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a109">'
++'柳丁味 </button>'
++'<button class="button_test_normal" name="q23_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a110">'
++'花香</button>'
++'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a111">'
++'甜瓜香 </button>'
++'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a112">'
++'香皂 </button>'
++'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a113">'
++'草藥茶(茶樹、迷迭香、香草)</button>'
++'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a114">'
++'粉香 </button>'
++'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a115">'
++'藥(膏藥香)</button>'
++'<button class="button_test_normal" name="q24_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a116">'
++'沒有</button>'
++''
++'</div>'
++'</div>'
+,
+
+'<div id="q25">'
++'<div class="next">11/17</div>'
++'<div class="question">選擇所有不喜歡的質感。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a117">'
++'膏罐狀</button>'
++'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a118">'
++'軟膏條狀 </button>'
++'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a119">'
++'面霜型</button>'
++'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a120">'
++'凝膠狀</button>'
++'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a121">'
++'乳液、乳清型 </button>'
++'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a122">'
++'水、精油型(液體) </button>'
++'<button class="button_test_normal" name="q25_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a123">'
++'沒有 </button>'
++'</div>'
++'</div>'
+,
+
+
+
+'<div id="q26">'
++'<div class="next">12/17</div>'
++'<div class="question">請選擇所有不喜歡的質感。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a124">'
++'非常稀</button>'
++'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a125">'
++'有點稀 </button>'
++'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a126">'
++'一般、柔軟'
++'</button>'
++'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a127">'
++'彈性 </button>'
++'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a128">'
++'稠(黏) </button>'
++'<button class="button_test_normal" name="q26_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a129">'
++'沒有 </button>'
++''
++'</div>'
++'</div>'
+,
+
+
+'<div id="q27">'
++'<div class="next">13/17</div>'
++'<div class="question">請選擇所有不喜歡的使用感。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a130">'
++'白濁 </button>'
++'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a131">'
++'黏糊糊 </button>'
++'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a132">'
++'清爽 </button>'
++'<button class="button_test_normal" name="q27_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a133">'
++'沒有 </button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q28">'
++'<div class="next">14/17</div>'
++'<div class="question">請選擇不喜歡的塗抹感。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a134">'
++'非常輕</button>'
++'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a135">'
++'清爽</button>'
++'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a136">'
++'普通 </button>'
++'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a137">'
++'厚重</button>'
++'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a138">'
++'層次感</button>'
++'<button class="button_test_normal" name="q28_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a139">'
++'沒有 </button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q29">'
++'<div class="next">15/17</div>'
++'<div class="question">請選擇洗臉後不喜歡的感覺。</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a140">'
++'油水分均多</button>'
++'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a141">'
++'水潤 </button>'
++'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a142">'
++'普通 </button>'
++'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a143">'
++'非常光滑 </button>'
++'<button class="button_test_normal" name="q29_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a144">'
++'沒有</button>'
++'</div>'
++'</div>'
+,
+
+'<div id="q30">'
++'<div class="next">16/17</div>'
++'<div class="question">物理防曬劑和化學防曬劑中更喜歡哪種？</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a145">'
++'物理防曬劑 </button>'
++'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a146">'
++'化學防曬劑 </button>'
++'<button class="button_test_normal" name="q30_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a147">'
++'沒有</button>'
++''
++'</div>'
++'</div>'
+,
+
+'<div id="q31">'
++'<div class="next">17/17</div>'
++'<div class="question">喜歡的防曬指數是？</div>'
++'<div class="answer">'
++'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a148">'
++'SPF 40以上 </button>'
++'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a149">'
++'SPF 40以下 </button>'
++'<button class="button_test_normal" name="q31_btns" data-checked="check"  data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a150">'
++'沒有</button>'
++'</div>'
++'</div>'
+  
+   ];
+
+  carousel = new SwipeView('#wrapper', {
+    numberOfPages: slides.length,
+    hastyPageFlip: true
+  });
+
+  for (i=0; i<3; i++) {
+    page = i==0 ? slides.length-1 : i-1;
+  
+    el = document.createElement('span');
+    el.innerHTML = slides[page];
+    alert(slides[page]);
+    carousel.masterPages[i].appendChild(el)
+  }
+
+carousel.onFlip(function () {
+	var el,
+		upcoming,
+		i;
+
+	for (i=0; i<3; i++) {
+		upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
+
+		if (upcoming != carousel.masterPages[i].dataset.pageIndex) {
+			el = carousel.masterPages[i].querySelector('span');
+			el.innerHTML = slides[upcoming];
+		}
+	}
+  });
   
     
       var answers =  <%-JSON.stringify(list)-%> ;

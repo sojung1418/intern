@@ -7,7 +7,7 @@
   <link rel='stylesheet' href='/stylesheets/style(test).css' />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type= 'text/javascript' src= '/javascripts/script.js'></script>
+  <script type= 'text/javascript' src= '/javascripts/script.js'></script> <script type= 'text/javascript' src= '/javascripts/SwipeView.js'></script>
 </head>
 
 <body>
@@ -18,61 +18,99 @@
   <br>
   <br>
   <div class="category-text" value = "cs5">Let us know about your skin care</div>
+<script>
+ $(document).ready(function(){
+  
+  console.log("ready");
 
-  <div id="q12">
-    <div class="next">1/3</div>
-    <div class="question">How many cosmetics do you have?.</div>
-    <input type="text" id="q12_text" data-answerType="at_str_s" />
-  </div>
+  var	carousel,
+	el,
+	i,
+	page,
+	slides = [
+'<div id="q12">'
++'<div class="next">1/3</div>'
++'<div class="question">How many cosmetics do you have?.</div>'
++'<input type="text" id="q12_text" data-answerType="at_str_s" />'
++'</div>'
+,
 
 
++'<div id="q13">'
++'<div class="next">2/3</div>'
++'<div class="question">Select the cosmetics that you are using currently.</div>'
++'<form class="answer">'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a32">Toner</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a33">Lotion</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a34">Serum</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a35">Essence</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a36">Oil</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a37">All-in-one</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a38">Sunscreen</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a39">Cream</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a40">Cleanser</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a41">Mask pack</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a42">Exfoliants</button>'
++'<br>
++''
++'</form>'
++'</div>'
+,
 
-  <div id="q13">
-    <div class="next">2/3</div>
-    <div class="question">Select the cosmetics that you are using currently.</div>
-    <form class="answer">
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a32">Toner</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a33">Lotion</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a34">Serum</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a35">Essence</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a36">Oil</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a37">All-in-one</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a38">Sunscreen</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a39">Cream</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a40">Cleanser</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a41">Mask pack</button>
-      <br>
-      <button class="button_test_normal" data-checked="check" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a42">Exfoliants</button>
-      <br>
+'<div id="q14">'
++'<div class="next">3/3</div>'
++'<div class="question">스킨 케어 제품을 구매할 때 1회 최대 구매 예산은 얼마인가요?</div>'
++'<div class="answer">'
++'<button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a43">Less than 30 USD</button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a44">30 USD ~ 50 USD </button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a45">50 USD ~ 100 USD </button>'
++'<br>'
++'<button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a46">100 USD  ~ 150 USD </button>'
++'<br>'
++'</div>'
++'</div>'];
 
-    </form>
-</div>
-    <div id="q14">
-      <div class="next">3/3</div>
-      <div class="question">스킨 케어 제품을 구매할 때 1회 최대 구매 예산은 얼마인가요?</div>
-      <div class="answer">
-        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a43">Less than 30 USD</button>
-        <br>
-        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a44">30 USD ~ 50 USD </button>
-        <br>
-        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a45">50 USD ~ 100 USD </button>
-        <br>
-        <button class="button_test_normal" data-checked="check" name="q14_btns" data-userid="<%=userid %>" data-cid="<%=cid %>" data-csid= "<%=csid%>" value="a46">100 USD  ~ 150 USD </button>
-        <br>
-      </div>
-    </div>
-    
+  carousel = new SwipeView('#wrapper', {
+    numberOfPages: slides.length,
+    hastyPageFlip: true
+  });
 
-    <script>
+  for (i=0; i<3; i++) {
+    page = i==0 ? slides.length-1 : i-1;
+  
+    el = document.createElement('span');
+    el.innerHTML = slides[page];
+    alert(slides[page]);
+    carousel.masterPages[i].appendChild(el)
+  }
+
+carousel.onFlip(function () {
+	var el,
+		upcoming,
+		i;
+
+	for (i=0; i<3; i++) {
+		upcoming = carousel.masterPages[i].dataset.upcomingPageIndex;
+
+		if (upcoming != carousel.masterPages[i].dataset.pageIndex) {
+			el = carousel.masterPages[i].querySelector('span');
+			el.innerHTML = slides[upcoming];
+		}
+	}
+  });
+
     
   
       var answers =  <%-JSON.stringify(list)-%> ;
