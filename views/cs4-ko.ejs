@@ -21,8 +21,9 @@
   <br>
   <br>
   <div class="category-text" value = "cs4">당신의 성향을 알려주세요.</div>
-<div id="slider" class="swipe">
-<div clss="swipe-wrap">
+<div  class="swiper-container">
+<div class="swiper-wrapper">
+<div class ="swiper-slide">
 <div id = "q8">
 <div class = "next">1/4</div>
 <div class="question">일주일에 화장을 얼마나 자주 하시나요?</div><br>
@@ -46,7 +47,7 @@
       
      <br>
      </div>
-<div clss="swipe-wrap">
+<div class="swiper-wrapper">
     <div id = "q9">
     <div class = "next">2/4</div>
       <div class="question">외모가 얼마나 중요하나요?</div>
@@ -69,7 +70,7 @@
       </div>
 
  </div>
-<div clss="swipe-wrap">
+<div clss="swiper-wrapper">
   <div id="q10">
     <div class="next">3/4</div>
     <div class="question">자신의 피부 장점을 적어주세요.(중복선택 가능)</div>
@@ -92,7 +93,7 @@
 
 
  </div>
-<div clss="swipe-wrap">
+<div clss="swiper-wrapper">
   <div id="q11">
     <div class="next">4/4</div>
     <div class="question">자신의 피부 단점을 적어주세요.(중복선택 가능)</div>
@@ -119,6 +120,7 @@
 
   </div>
  </div>
+  </div>
  <script>
   
     var answers =  <%-JSON.stringify(list)-%> ;
