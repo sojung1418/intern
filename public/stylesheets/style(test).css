@@ -144,27 +144,27 @@ margin-top: 31px;
  }
  /*원형 숫자버튼 1 */
  .button_normal[value="1"] {
-   top: 110px;
+   top: 86px;
    
  }
  /*원형 숫자버튼 2*/
  .button_normal[value="2"] {
-   top: 46px;
+   top: 22px;
    margin-left: -20px;
  }
  /*원형 숫자버튼 3 */
  .button_normal[value="3"] {
- top:24px;
+
    margin-left: 11px;
  }
  /*원형 숫자버튼 4 */
  .button_normal[value="4"] {
-   top: 46px;
+   top: 22px;
    margin-left: 11px;
  }
  /*원형 숫자버튼 5 */
  .button_normal[value="5"] {
-   top: 110px;
+   top: 86px;
    margin-left: -20px;
  }
 
