@@ -98,7 +98,7 @@ $(document).ready(function () {
           q.each(function () {
             if ($(this).val() == aid) {
 
-              $(this).attr('class', 'button_brand_normal button_brand_cosmetic_normal_checked');
+              $(this).toggleClass('button_brand_cosmetic_normal_checked');
               $(this).data("data-checked", "check");
             }
 
