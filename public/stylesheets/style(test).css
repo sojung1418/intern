@@ -140,7 +140,7 @@ margin-top: 31px;
   opacity: 1;
   transition: 0.3s;
   border-radius: 50%;
-  margin-right:30px;
+  margin-right:60px;
  }
  /*원형 숫자버튼 1 */
  .button_normal[value="1"] {
