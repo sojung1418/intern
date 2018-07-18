@@ -3,7 +3,7 @@
         <path id="a" d="M0 .558h27.896v36.798H0z"/>
     </defs>
     <g fill="none" fill-rule="evenodd">
-        <path fill="#FFF" d="M-244-230H76v759h-320z"/>
+        <path fill="none" d="M-244-230H76v759h-320z"/>
         <g transform="translate(0 .086)">
             <mask id="b" fill="#fff">
                 <use xlink:href="#a"/>

@@ -3,7 +3,7 @@
         <path id="a" d="M0 .558h27.896v36.798H0z"/>
     </defs>
     <g fill="none" fill-rule="evenodd" transform="translate(-244 -442)">
-        <path fill="#FFF" d="M0 0h320v759H0z"/>
+        <path fill="none" d="M0 0h320v759H0z"/>
         <rect width="91" height="55" x="212.5" y="433.5" fill="#FEFEFE" stroke="#F2F2F2" rx="8"/>
         <g transform="translate(244 442.086)">
             <mask id="b" fill="#fff">
