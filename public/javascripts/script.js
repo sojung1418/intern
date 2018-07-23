@@ -6,7 +6,7 @@ $(document).ready(function () {
 
   console.log("readyjs");
   var image = [
-    "q1", "q2", "q102",
+    "q1", "q2", "q102","q108",
   ]
   var int = [
     "q8","q9","q39", "q40", "q41","q95-1","q95-2","q95-3","q97-1","q97-2","q97-3","q98-1","q98-2","q98-3","q104","q107","q108","q109",

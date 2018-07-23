@@ -60,7 +60,7 @@ font: 12px;
 }
 .button_image_normal{
   
-  
+  position: absolute;
   background-color: #ffffff;
   border: 1px solid;
   border-color: #f2f2f2;
