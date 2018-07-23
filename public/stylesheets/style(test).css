@@ -286,3 +286,17 @@ font-size: 15px;
   border-radius: 50%;
   border: 0px;
 }
+.btn_next {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  position : fixed;
+  right : 16px;
+  bottom : 16px;
+  background-color: #f86f9c;
+  border-color: #f86f9c;
+  border: 0px;
+  visibility: hidden;
+  z-index: 10;
+}
+
